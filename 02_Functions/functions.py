@@ -68,3 +68,22 @@ plt.grid(True, which='both', linestyle='--', alpha=0.5)
 plt.legend() 
 
 plt.show()
+
+y = 2 * x
+
+x_np = x.cpu().numpy()
+y_np = y.cpu().numpy()
+
+plt.figure(figsize=(10, 6))
+plt.plot(x_np, y_np, label='f(x) = 2x', color='blue', linewidth=2)
+
+plt.axhline(0, color='black', linewidth=1)
+plt.axvline(0, color='black', linewidth=1)
+
+plt.title('Linear Function Plot', fontsize=14)
+plt.xlabel('Input (x)', fontsize=12)
+plt.ylabel('Output (f(x))', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.legend()
+
+plt.show()
