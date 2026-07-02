@@ -24,3 +24,5 @@ Just as linear algebra is fundamental to AI, functions play a dual role:
 
 ---
 ### 🚀 Let's dive into the code.
+
+# Note: The file figure_1.png is the plot of a nonlinear function, and the file figure_2.png is also the plot of a nonlinear function.
