@@ -2,7 +2,7 @@
 
 - 1. What is linear algebra?
   
-  - Linear algebra is the study of vectors and matrices, providing the mathematical framework and language essential for artificial intelligence.”
+  ## Linear algebra is the study of vectors and matrices, providing the mathematical framework and language essential for artificial intelligence.”
 
 - 2. So, where exactly is it used in artificial intelligence?
 
