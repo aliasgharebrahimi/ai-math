@@ -24,3 +24,4 @@
 How Mathematics Has Taken Over All of Artificial Intelligence
 
 - Author : aliasghar ebrahimii
+- History : The year 2026
