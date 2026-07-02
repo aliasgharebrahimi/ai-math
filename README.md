@@ -11,7 +11,7 @@
 - Functions (in mathematics, of course)
 
 - Derivative and Gradient
-@ali.deeplearning.g.26
+
 - Distributions
 
 ## 🛠 Tools
