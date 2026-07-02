@@ -23,5 +23,11 @@
 
 How Mathematics Has Taken Over All of Artificial Intelligence
 
+## Prerequisites
+- Python 3.8+
+- PyTorch
+- Matplotlib
+
+
 - Author : aliasghar ebrahimii
 - History : The year 2026
