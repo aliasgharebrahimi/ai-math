@@ -29,5 +29,5 @@ How Mathematics Has Taken Over All of Artificial Intelligence
 - Matplotlib
 
 
-- Author : aliasghar ebrahimii
+- Author : aliasghar ebrahimi
 - History : The year 2026
