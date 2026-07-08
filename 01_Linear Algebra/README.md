@@ -12,6 +12,8 @@
 
   - First, regarding matrix multiplication: the number of columns in the first matrix must match the number of rows in the second matrix. You multiply the rows of the first matrix by the columns of the second matrix—multiplying the first row by all the columns of the second matrix, then the second row by those columns, and so on. Matrix addition is very simple: you just add the corresponding elements from the two matrices. The dot product works similarly to addition, except that you multiply the corresponding elements instead of adding them.
 
+- Dot product formula : $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n $$
+
 ## Note: In PyTorch, we refer to these vectors, matrices, and so on as "tensors"—a vector is a 1D tensor, a matrix is ​​a 2D tensor, and so forth (3D tensor, etc.).
 
 ## In CNN layers, color images are fed into the model as three matrices, while black-and-white images are fed as a single matrix.
