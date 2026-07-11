@@ -14,7 +14,7 @@
 
 ## Linear Algebra Concepts
 
-
+   - Vectors : A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space.
 
 - Dot product formula : $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n $$
 
