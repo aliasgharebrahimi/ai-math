@@ -18,6 +18,14 @@
 
    - Matrices : A collection of vectors arranged side-by-side in rows and columns is called a matrix.
 
+   - Matrix multiplication : Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is ​​multiplied by the corresponding element in the second matrix's column, and so on. The formula is: cᵢⱼ = ∑ₖ₌₁ⁿ aᵢₖ · bₖⱼ.
+   Word-by-word explanation of the formula : cᵢⱼ means taking the row of the first matrix and the column of the second matrix.
+   k=1
+   ∑
+   n
+   represents a summation that proceeds from the 1st term to the nth term. 
+   aᵢₖ · bₖⱼ. : Multiply the k-th element of the column by the k-th element of the row.
+
 - Dot product formula : $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n $$
 
 ## Note: In PyTorch, we refer to these vectors, matrices, and so on as "tensors"—a vector is a 1D tensor, a matrix is ​​a 2D tensor, and so forth (3D tensor, etc.).
