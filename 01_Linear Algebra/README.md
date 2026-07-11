@@ -16,6 +16,8 @@
 
    - Vectors : A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space.
 
+   - Matrices : A collection of vectors arranged side-by-side in rows and columns is called a matrix.
+
 - Dot product formula : $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n $$
 
 ## Note: In PyTorch, we refer to these vectors, matrices, and so on as "tensors"—a vector is a 1D tensor, a matrix is ​​a 2D tensor, and so forth (3D tensor, etc.).
