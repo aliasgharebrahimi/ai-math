@@ -38,7 +38,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrix Multiplication** | Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is ​​multiplied by the corresponding element in the second matrix's column, and so on. |
 | **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.|
 
-### 🔢 The Multiplicatio Formula
+### 🔢 Formulas
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
 
 **Word-by-word explanation of the formula:**
