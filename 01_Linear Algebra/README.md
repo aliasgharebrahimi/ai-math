@@ -25,6 +25,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 * **Matrix Multiplication:** The number of columns in the first matrix must match the number of rows in the second matrix. You multiply the rows of the first matrix by the columns of the second matrix—multiplying the first row by all the columns of the second matrix, then the second row by those columns, and so on.
 * **Matrix Addition:** Matrix addition is very simple: you just add the corresponding elements from the two matrices.
+* **Matrix transpose:**In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.
 * **Dot Product:** The dot product works similarly to addition, except that you multiply the corresponding elements instead of adding them.
 
 ---
