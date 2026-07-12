@@ -35,6 +35,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Zero matrix** | It refers to a matrix in which all the numbers are 0. | 0 |
 | **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.| Aᵀ
 | **Identity matrix** | A square matrix with 1s on the diagonal and 0s elsewhere, denoted by I_n (where n represents the number of rows/columns); for example, I_3 refers to an identity matrix with 3 rows and 3 columns.| l-n
+| **Matrix Inversion Operation** | In other words, if a matrix is ​​multiplied by its inverse, the result is the identity matrix; furthermore, for a matrix to have an inverse, it must be square and its determinant must be non-zero. | 
 
 ### 🔢 Formulas
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
