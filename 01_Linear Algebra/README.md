@@ -33,6 +33,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrices** | A collection of vectors arranged side-by-side in rows and columns is called a matrix. |
 | **Matrix Multiplication** | Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is ​​multiplied by the corresponding element in the second matrix's column, and so on. |
 | **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.|
+| **Identity matrix** | A square matrix with 1s on the diagonal and 0s elsewhere, denoted by $I_n$ (where $n$ represents the number of rows/columns); for example, $I_3$ refers to an identity matrix with 3 rows and 3 columns.|
 
 ### 🔢 Formulas
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
