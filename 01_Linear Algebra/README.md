@@ -28,7 +28,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ## 📚 Linea Algebra Concepts
 
 | Concept | Description | Mathematical symbol |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | **Vectors** | A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space. |
 | **Matrices** | A collection of vectors arranged side-by-side in rows and columns is called a matrix. | A, B,... | 
 | **Matrix Multiplication** | Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is ​​multiplied by the corresponding element in the second matrix's column, and so on. | A, B,... |
