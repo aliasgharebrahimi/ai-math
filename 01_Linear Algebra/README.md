@@ -29,7 +29,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 | Concept | Description | Mathematical symbol |
 | :--- | :--- | :--- |
-| **scaler** | A scalar is simply a number; in a space, it represents a point. |
+| **scaler** | A scalar is simply a number; in a space, it represents a point. | A, B,... |
 | **Vectors** | A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space which appears as a line in space. | A, B,... |
 | **Matrices** | A collection of vectors arranged side-by-side in rows and columns is called a matrix And in space, the matrix takes the form of a two-dimensional plane, like a sheet. | A, B,... | 
 | **Dot Product** | The dot product is used to measure the degree of similarity between two vectors, scalars, matrices, or other entities; for instance, with two vectors, the output value will be high if the vectors are similar, and low if they are not.| A.B |
