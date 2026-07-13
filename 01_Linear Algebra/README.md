@@ -32,6 +32,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **scaler** | A scalar is simply a number; in a space, it represents a point. |
 | **Vectors** | A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space which appears as a line in space. | A, B,... |
 | **Matrices** | A collection of vectors arranged side-by-side in rows and columns is called a matrix. | A, B,... | 
+| **Dot Product** | The dot product is used to measure the degree of similarity between two vectors, scalars, matrices, or other entities; for instance, with two vectors, the output value will be high if the vectors are similar, and low if they are not.| A.B |
 | **Matrix Multiplication** | Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is ​​multiplied by the corresponding element in the second matrix's column, and so on. | A⋅B |
 | **Zero matrix** | It refers to a matrix in which all the numbers are 0. | 0 |
 | **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.| Aᵀ
