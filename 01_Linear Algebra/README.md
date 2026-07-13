@@ -1,5 +1,7 @@
 # 📐 Linear Algebra
 
+<img src="../Project photos/Photos in folder 01/Linear Algebra Visualization.jpg" alt="" />
+
 ---
 
 ##🔍 1. What is linear algebra?
