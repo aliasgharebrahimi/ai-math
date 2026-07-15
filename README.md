@@ -1,6 +1,6 @@
 # Mathematics in Artificial Intelligence: From Desk to Code
 
-<img src="../Project photos/Photos in folder 01/Linear Algebra Visualization.jpg" alt="" />
+<img src="./Project photos/main-README.md.jpg" alt="" />
 
 ## 📚 What we learn
 
