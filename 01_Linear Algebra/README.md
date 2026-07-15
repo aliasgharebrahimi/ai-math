@@ -43,7 +43,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Basis** | A set that is both linearly independent and spans the entire space. | $\text{span}(\mathcal{B})=V \land \text{LI}(\mathcal{B})$ |
 | **Zero Matrix** | A matrix consisting entirely of zeros. | $\mathbf{0}$ |
 | **Matrix Transpose** | Flipping a matrix over its diagonal, switching rows and columns. | $A^\top$ |
-| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | I_n |
+| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | $$ I_n $$ |
 | **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A) |
 | **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
 ### 🔢 Formulas
