@@ -40,7 +40,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **span** | The Span represents the set of all possible outcomes achievable through the linear combinations of a given set of vectors. It defines the total reachable space: for instance, if a linear combination only involves scaling a single vector, the span is restricted to a line (1D). However, if we introduce a second, linearly independent vector (allowing movement in a new direction), the span expands to cover a plane (2D) | |
 | **Independent vector** | A set of vectors is linearly independent if no vector within the set can be constructed from the other vectors in that same set. |  |
 | **Dependent vector** | A set of vectors is linearly dependent if a vector within that set can be formed through a linear combination of other vectors in the same set. |  |
-| **Base** | A set of vectors is called a basis if the set is completely linearly independent and spans the entire space. |  |
+| **Base** | A set of vectors is called a basis if the set is completely linearly independent and spans the entire space. | span(B)=V |
 | **Zero matrix** | It refers to a matrix in which all the numbers are 0. | 0 |
 | **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.| Aᵀ
 | **Identity matrix** | A square matrix with 1s on the diagonal and 0s elsewhere, denoted by I_n (where n represents the number of rows/columns); for example, I_3 refers to an identity matrix with 3 rows and 3 columns.| Iₙ
