@@ -29,23 +29,22 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 ## 📚 Linear Algebra Concepts
 
-| Concept | Description | Mathematical symbol |
+| Concept | Description | Mathematical Symbol |
 | :--- | :--- | :--- |
-| **Scalar** | A scalar is simply a number; in a space, it represents a point. | A, B,... |
-| **Vectors** | A vector is an ordered list of numbers representing direction and magnitude in a multidimensional space which appears as a line in space. | A, B,... |
-| **Matrices** | A collection of vectors arranged side-by-side in rows and columns is called a matrix And in space, the matrix takes the form of a two-dimensional plane, like a sheet. | A, B,... | 
-| **Dot Product** | The dot product is used to measure the degree of similarity between two vectors, scalars, matrices, or other entities; for instance, with two vectors, the output value will be high if the vectors are similar, and low if they are not.| A.B |
-| **Matrix Multiplication** | Note that matrix multiplication differs from ordinary multiplication; here, we use row-by-column multiplication Matrix multiplication differs from standard multiplication; the dimensions of the two matrices must align (specifically, the number of columns in the first matrix must match the number of rows in the second). The operation proceeds as follows: an element from the first matrix is multiplied by the corresponding element in the second matrix's column, and so on If the dimensions of our matrix are m by n and the second matrix is s by m, the dimensions of the output will be s by n. | A⋅B |
-| **Linear combination** | It is very simple: it means multiplying several vectors by a scalar and then adding them together. |  |
-| **span** | The Span represents the set of all possible outcomes achievable through the linear combinations of a given set of vectors. It defines the total reachable space: for instance, if a linear combination only involves scaling a single vector, the span is restricted to a line (1D). However, if we introduce a second, linearly independent vector (allowing movement in a new direction), the span expands to cover a plane (2D) | |
-| **Independent vector** | A set of vectors is linearly independent if no vector within the set can be constructed from the other vectors in that same set. |  |
-| **Dependent vector** | A set of vectors is linearly dependent if a vector within that set can be formed through a linear combination of other vectors in the same set. |  |
-| **Base** | A set of vectors is called a basis if the set is completely linearly independent and spans the entire space. | span(B)=V∧LI(B) |
-| **Zero matrix** | It refers to a matrix in which all the numbers are 0. | 0 |
-| **Matrix transpose** | In other words, we convert rows into columns and columns into rows; its notation is Aᵀ.| Aᵀ
-| **Identity matrix** | A square matrix with 1s on the diagonal and 0s elsewhere, denoted by I_n (where n represents the number of rows/columns); for example, I_3 refers to an identity matrix with 3 rows and 3 columns.| Iₙ
-| **Matrix Inversion Operation** | In other words, if a matrix is multiplied by its inverse, the result is the identity matrix; furthermore, for a matrix to have an inverse, it must be square and its determinant must be non-zero. | 
-
+| **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
+| **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
+| **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
+| **Dot Product** | An operation between two vectors that returns a scalar, measuring their alignment. | $\mathbf{a} \cdot \mathbf{b}$ |
+| **Matrix Multiplication** | An operation where the number of columns in the first matrix must match the rows in the second. | $AB$ |
+| **Linear Combination** | The sum of scaled vectors: $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \dots + c_n\mathbf{v}_n$. | $\sum_{i=1}^{n} c_i \mathbf{v}_i$ |
+| **Span** | The set of all possible linear combinations of a given set of vectors. | $\text{span}(\mathcal{B})$ |
+| **Linearly Independent** | A set where no vector can be formed by a linear combination of the others. | $\text{LI}(\mathcal{B})$ |
+| **Linearly Dependent** | A set where at least one vector is a linear combination of the others. | $\text{LD}(\mathcal{B})$ |
+| **Basis** | A set that is both linearly independent and spans the entire space. | $\text{span}(\mathcal{B})=V \land \text{LI}(\mathcal{B})$ |
+| **Zero Matrix** | A matrix consisting entirely of zeros. | $\mathbf{0}$ |
+| **Matrix Transpose** | Flipping a matrix over its diagonal, switching rows and columns. | $A^\top$ |
+| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | $I_n$ |
+| **Matrix Inversion** | A matrix $A^{-1}$ such that $AA^{-1} = I$. Requires $\det(A) \neq 0$. | $A^{-1}$ |
 ### 🔢 Formulas
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
 
