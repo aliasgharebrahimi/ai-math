@@ -43,7 +43,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Basis** | A set that is both linearly independent and spans the entire space. | $\text{span}(\mathcal{B})=V \land \text{LI}(\mathcal{B})$ |
 | **Zero Matrix** | A matrix consisting entirely of zeros. | $\mathbf{0}$ |
 | **Matrix Transpose** | Flipping a matrix over its diagonal, switching rows and columns. | $A^\top$ |
-| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | $I_n$ |
+| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | $ I_n $ |
 | **Matrix Inversion** | A matrix $A^{-1}$ such that $AA^{-1} = I$. Requires $\det(A) \neq 0$. | $A^{-1}$ |
 ### 🔢 Formulas
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
