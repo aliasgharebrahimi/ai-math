@@ -28,13 +28,14 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ---
 
 ## 📚 Linear Algebra Concepts
-# Basic Concepts
+### Basic Concepts
 
 | Concept | Description | Mathematical Symbol |
 | :--- | :--- | :--- |
 | **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
+| **Norm2** | It has a very simple concept: for a given vector, the distance from a point to the origin is called the "Norm2." | |
 | **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x) |
 | **180-degree turn** | In the form (x, y) → (-x, -y) | (x, y) → (-x, -y) |
 | **270-degree turn** | In the form (x,y)→(y,−x), (x,y)→(-y,x) | (x,y)→(y,−x), (x,y)→(-y,x) |
