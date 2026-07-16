@@ -27,8 +27,9 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 ---
 
-## 📚 Linear Algebra Concepts
 <br>
+## 📚 Linear Algebra Concepts
+
 
 | Concept | Description | Mathematical Symbol |
 | :--- | :--- | :--- |
