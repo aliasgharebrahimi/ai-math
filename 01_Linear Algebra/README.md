@@ -29,7 +29,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 ## 📚 Linear Algebra Concepts
 
-
+<h2>Basic Concepts</h2>
 | Concept | Description | Mathematical Symbol |
 | :--- | :--- | :--- |
 | **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
