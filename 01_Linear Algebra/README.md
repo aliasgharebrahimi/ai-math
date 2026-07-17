@@ -42,6 +42,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
 | **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x) |
 | **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | |
+| **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | |
 | **180-degree turn** | In the form (x, y) → (-x, -y) | (x, y) → (-x, -y) |
 | **270-degree turn** | In the form (x,y)→(y,−x), (x,y)→(-y,x) | (x,y)→(y,−x), (x,y)→(-y,x) |
 | **Dot Product** | An operation between two vectors that returns a scalar, measuring their alignment. | $\mathbf{a} \cdot \mathbf{b}$ |
