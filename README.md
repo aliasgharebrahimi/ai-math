@@ -1,6 +1,12 @@
 # Mathematics in Artificial Intelligence: From Desk to Code
 
 <img src="./Project photos/main-README.md.jpg" alt="" />
+<br>
+<hr>
+<br>
+
+<h2>Explanation of the project structure</h2>
+
 
 ## 📚 What we learn
 
