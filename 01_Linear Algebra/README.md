@@ -3,6 +3,8 @@
 <img src="../Project photos/Photos in folder 01/Linear Algebra Visualization.jpg" alt="" />
 
 ---
+<h2>Explanation of the project structure</h2>
+<img src="../Project photos/Photos in folder 01/Map-Project-Linear Algbera.jpg" alt="" />
 
 ##🔍 1. What is linear algebra?
 
