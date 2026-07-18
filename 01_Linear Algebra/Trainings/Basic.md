@@ -112,11 +112,13 @@ Given a vector v = [v₁, v₂, ..., vₙ], the different norms are defined as:
 ##### Example:
 
 **Norm1:**
+
 u = [4.0, -3.0]  
 n = 4.0 + 3.0  
 n = 7.0
 
 **Norm2:**
+
 v = [4.0, -3.0]  
 w = √(4.0² + 3.0²)  
 w = √(16.0 + 9.0)  
@@ -124,6 +126,7 @@ w = √(25.0)
 w = 5.0
 
 **L-infinity Norm:**
+
 v = [4.0, -3.0]  
 q = max(v)  
 q = 4.0
@@ -133,12 +136,31 @@ q = 4.0
 ##### Unit Vector
 
 v̂
+Example:
+
+v = [1.0, 0.0]
+p = 1.0 + 0.0
+p = 1.0
 
 ##### Example:
 
 Converting a Norm vector to a unit vector:
 
 v̂ = v / ||v||
+
+Example:
+
+v = [4.0, -3.0]
+x = 4.0 + 3.0
+x = 7.0
+v̂ = v / x
+v̂ = [4.0, -3.0] / 7.0
+v̂ = [0.5714285714285714, 0.4285714285714286]
+
+Test:
+
+d = 0.5714285714285714 + 0.4285714285714286
+d = 1.0
 
 ---
 
