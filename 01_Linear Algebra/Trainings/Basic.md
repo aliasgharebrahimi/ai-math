@@ -30,7 +30,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
-| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | |
+| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
@@ -98,6 +98,14 @@ Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are de
 3. **L-infinity Norm (Max Norm):**
 
       max(|vᵢ|)
+<hr>
+
+##### unit vector
+v̂
+
+Converting a Norm vector to a unit vector
+
+v̂ = v / ||v||
 ---
 
 ## 💡 Important Notes
