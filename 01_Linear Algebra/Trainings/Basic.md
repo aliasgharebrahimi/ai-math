@@ -133,33 +133,43 @@ q = 4.0
 
 <hr>
 
-##### Unit Vector
+# Unit Vector
 
 v̂
 
-##### Example:
-
+### Example 1:
+**Input Vector:**
 v = [1.0, 0.0]
+
+**Magnitude (p):**
 p = 1.0 + 0.0
 p = 1.0
 
-##### Example:
+---
 
-Converting a Norm vector to a unit vector:
-
+### Converting a Norm vector to a unit vector:
+Formula:
 v̂ = v / ||v||
 
-##### Example:
+---
 
+### Example 2:
+**Input Vector:**
 v = [4.0, -3.0]
+
+**Magnitude calculation (x):**
 x = 4.0 + 3.0
 x = 7.0
+
+**Unit Vector calculation:**
 v̂ = v / x
 v̂ = [4.0, -3.0] / 7.0
 v̂ = [0.5714285714285714, 0.4285714285714286]
 
-##### Test:
+---
 
+### Test:
+**Result check (d):**
 d = 0.5714285714285714 + 0.4285714285714286
 d = 1.0
 
