@@ -56,22 +56,21 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ### 🔢 Mathematical explanation
 #### Presenting formulas and examining concepts mathematically.
 
-##### scalar :
-c = 6.2
+##### Scalar:
+$c = 6.2$
 
-##### vector:
+##### Vector:
 $$
-\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}
-$$
-$$
-\mathbf{u} = [v_1, v_2, v_3]
-$$
-##### The concept of scaling a vector by a scalar :
-$$
-c \cdot \mathbf{v} = c \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix} = \begin{bmatrix} c \cdot v_1 \\ c \cdot v_2 \\ c \cdot v_3 \end{bmatrix}
+\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}, \quad \mathbf{u} = [u_1, u_2, u_3]
 $$
 
-##### matrix:
+##### Scaling a Vector by a Scalar:
+Multiplying a vector by a scalar scales its magnitude:
+$$
+c \cdot \mathbf{v} = \begin{bmatrix} c \cdot v_1 \\ c \cdot v_2 \\ c \cdot v_3 \end{bmatrix}
+$$
+
+##### Matrix:
 $$
 A = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
