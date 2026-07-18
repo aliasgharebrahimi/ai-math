@@ -1,13 +1,6 @@
 # Mathematics in Artificial Intelligence: From Desk to Code
 
 <img src="./Project photos/main-README.md.jpg" alt="" />
-<br>
-<hr>
-
-<h2>Explanation of the project structure</h2>
-<h3>Linear Algebra</h3>
-
-<img src="./Project photos/main-README.md.jpg" alt="" />
 
 ## 📚 What we learn
 

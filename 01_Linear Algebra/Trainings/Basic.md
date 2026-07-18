@@ -53,16 +53,9 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. |    I<sub>n<sub> |
 | **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A) |
 | **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
-### 🔢 Formulas
-$$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
+### 🔢 Mathematical explanation
+#### Presenting formulas and examining concepts mathematically.
 
-**Word-by-word explanation of the formula:**
-* 📍 $c_{ij}$: means taking the row of the first matrix and the column of the second matrix.
-* 🔄 $\sum_{k=1}^{n}$: represents summation that proceeds from the 1st term to the nth term.
-* ✖️ $a_{ik} \cdot b_{kj}$: Multiply the $k$-th element of the column by the $k$-th element of the row.
-
-### 🎯 Dot Product Formula
-$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n$$
 
 ---
 
