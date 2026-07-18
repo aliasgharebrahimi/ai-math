@@ -30,8 +30,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
-| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. |
- v̂ |
+| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
@@ -54,83 +53,48 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. |    I<sub>n<sub> |
 | **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A) |
 | **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
+
 ### 🔢 Mathematical explanation
 #### Presenting formulas and examining concepts mathematically.
+
 <hr>
 
 ##### Scalar:
-$c = 6.2$
+c = 6.2
+
 <hr>
 
 ##### Vector:
-$$
-\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}, \quad \mathbf{u} = [u_1, u_2, u_3]
-$$
+v = [v₁, v₂, v₃] ,   u = [u₁, u₂, u₃]
 
 ##### Example:
+v = [6.2, 5.3, 8.6]
 
-   v = [6.2, 5.3, 8.6]
+<hr>
 
 ##### Scaling a Vector by a Scalar:
-Multiplying a vector by a scalar scales its magnitude:
- 
-   α · v = [αv₁, αv₂, ..., αvₙ]
+α · v = [αv₁, αv₂, ..., αvₙ]
 
 ##### Example:
+α = 6.0  
+v = [1.0, 2.0, 6.0]
 
-   α = 6.0
-   v = [1.0, 2.0, 6.0]
-   z = α · v = [1.0 . 6.0, 2.0 . 6.0, 6.0 . 6.0] = [6.0, 12.0, 36.0]
-   z = [6.0, 12.0, 36.0]
+z = α · v = [1.0 × 6.0, 2.0 × 6.0, 6.0 × 6.0]  
+z = [6.0, 12.0, 36.0]
 
 <hr>
 
 ##### Matrix:
-$$
-A = \begin{bmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
-\end{bmatrix}
-$$
+A = [[a₁₁, a₁₂, a₁₃],  
+     [a₂₁, a₂₂, a₂₃],  
+     [a₃₁, a₃₂, a₃₃]]
 
 ##### Example:
-
-   B = [2., 1., 6.]
-       [8., 9., 4.]
-       [7., 1., 6.]
-
-<hr>
-
-##### Norm
-
-Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are defined as:
-
-1. **L1 Norm (Manhattan Norm):**
-
-      ∑ |vᵢ|
-
-2. **L2 Norm (Euclidean Norm):**
-
-      √(∑ |vᵢ|²)
-
-3. **L-infinity Norm (Max Norm):**
-
-      max(|vᵢ|)
-Example:
+B = [[2., 1., 6.],  
+     [8., 9., 4.],  
+     [7., 1., 6.]]
 
 <hr>
-
-##### unit vector
-
-v̂
-Example:
-
-Converting a Norm vector to a unit vector
-
-v̂ = v / ||v||
-
-Example:
 
 ---
 
