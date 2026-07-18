@@ -29,8 +29,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
-| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." |   $$\|v\|_1 = \sum_{i=1}^{n} |v_i|$$
- |
+| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ||v||₁, ||v||₂, ||v||∞ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
