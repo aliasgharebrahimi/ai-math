@@ -30,7 +30,9 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
-| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
+| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. |
+
+ v̂ |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
@@ -66,10 +68,21 @@ $$
 \mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}, \quad \mathbf{u} = [u_1, u_2, u_3]
 $$
 
+Example:
+   v = [6.2, 5.3, 8.6]
+
 ##### Scaling a Vector by a Scalar:
 Multiplying a vector by a scalar scales its magnitude:
  
    α · v = [αv₁, αv₂, ..., αvₙ]
+
+Example:
+
+   α = 6.0
+   v = [1.0, 2.0, 6.0]
+   z = α · v = [1.0 . 6.0, 2.0 . 6.0, 6.0 . 6.0] = [6.0, 12.0, 36.0]
+   z = [6.0, 12.0, 36.0]
+
 <hr>
 
 ##### Matrix:
@@ -80,6 +93,10 @@ a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
 \end{bmatrix}
 $$
+
+Example:
+
+
 
 <hr>
 
@@ -98,14 +115,21 @@ Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are de
 3. **L-infinity Norm (Max Norm):**
 
       max(|vᵢ|)
+Example:
+
 <hr>
 
 ##### unit vector
+
 v̂
+Example:
 
 Converting a Norm vector to a unit vector
 
 v̂ = v / ||v||
+
+Example:
+
 ---
 
 ## 💡 Important Notes
