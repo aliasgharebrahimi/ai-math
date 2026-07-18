@@ -31,7 +31,6 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. |
-
  v̂ |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
@@ -68,7 +67,8 @@ $$
 \mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}, \quad \mathbf{u} = [u_1, u_2, u_3]
 $$
 
-Example:
+##### Example:
+
    v = [6.2, 5.3, 8.6]
 
 ##### Scaling a Vector by a Scalar:
@@ -76,7 +76,7 @@ Multiplying a vector by a scalar scales its magnitude:
  
    α · v = [αv₁, αv₂, ..., αvₙ]
 
-Example:
+##### Example:
 
    α = 6.0
    v = [1.0, 2.0, 6.0]
@@ -94,9 +94,11 @@ a_{31} & a_{32} & a_{33}
 \end{bmatrix}
 $$
 
-Example:
+##### Example:
 
-
+   B = [2., 1., 6.]
+       [8., 9., 4.]
+       [7., 1., 6.]
 
 <hr>
 
