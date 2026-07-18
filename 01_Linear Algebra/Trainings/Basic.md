@@ -80,7 +80,7 @@ a_{31} & a_{32} & a_{33}
 \end{bmatrix}
 $$
 
-### Vector Norm Definitions
+##### Vector Norm Definitions
 
 Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are defined as:
 
