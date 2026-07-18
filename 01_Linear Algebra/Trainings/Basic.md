@@ -29,7 +29,8 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
 | **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
-| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | <p>L1 Norm: <code>||v||<sub>1</sub> = &sum; |v<sub>i</sub>|</code></p>, <p>L2 Norm: <code>||v||<sub>2</sub> = &radic;&sum; |v<sub>i</sub>|<sup>2</sup></code></p>, <p>L-infinity Norm: <code>||v||<sub>&infin;</sub> = max(|v<sub>i</sub>|)</code></p>  |
+| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." |   $$\|v\|_1 = \sum_{i=1}^{n} |v_i|$$
+ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
@@ -85,12 +86,15 @@ $$
 Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are defined as:
 
 1. **L1 Norm (Manhattan Norm):**
+
    $$\|\mathbf{v}\|_1 = \sum_{i=1}^{n} |v_i|$$
 
 2. **L2 Norm (Euclidean Norm):**
+
    $$\|\mathbf{v}\|_2 = \sqrt{\sum_{i=1}^{n} v_i^2}$$
 
 3. **L-infinity Norm (Max Norm):**
+
    $$\|\mathbf{v}\|_\infty = \max(|v_1|, |v_2|, \dots, |v_n|)$$
 
 ---
