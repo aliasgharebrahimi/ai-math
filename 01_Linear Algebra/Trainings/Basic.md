@@ -136,19 +136,20 @@ q = 4.0
 ##### Unit Vector
 
 v̂
-Example:
+
+**Example:**
 
 v = [1.0, 0.0]
 p = 1.0 + 0.0
 p = 1.0
 
-##### Example:
+**Example:**
 
 Converting a Norm vector to a unit vector:
 
 v̂ = v / ||v||
 
-##### Example:
+**Example:**
 
 v = [4.0, -3.0]
 x = 4.0 + 3.0
@@ -157,7 +158,7 @@ v̂ = v / x
 v̂ = [4.0, -3.0] / 7.0
 v̂ = [0.5714285714285714, 0.4285714285714286]
 
-##### Test:
+**Test:**
 
 d = 0.5714285714285714 + 0.4285714285714286
 d = 1.0
