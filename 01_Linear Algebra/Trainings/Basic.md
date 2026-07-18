@@ -85,16 +85,60 @@ z = [6.0, 12.0, 36.0]
 <hr>
 
 ##### Matrix:
-A = [[a₁₁, a₁₂, a₁₃],  
-     [a₂₁, a₂₂, a₂₃],  
-     [a₃₁, a₃₂, a₃₃]]
+A = [a₁₁, a₁₂, a₁₃],  
+    [a₂₁, a₂₂, a₂₃],  
+    [a₃₁, a₃₂, a₃₃]
 
 ##### Example:
-B = [[2., 1., 6.],  
-     [8., 9., 4.],  
-     [7., 1., 6.]]
+B = [2., 1., 6.],  
+    [8., 9., 4.],  
+    [7., 1., 6.]
 
 <hr>
+
+##### Norm
+
+Given a vector v = [v₁, v₂, ..., vₙ], the different norms are defined as:
+
+1. **L1 Norm (Manhattan Norm):**
+   ∑ |vᵢ|
+
+2. **L2 Norm (Euclidean Norm):**
+   √(∑ |vᵢ|²)
+
+3. **L-infinity Norm (Max Norm):**
+   max(|vᵢ|)
+
+##### Example:
+
+**Norm1:**
+u = [4.0, -3.0]  
+n = 4.0 + 3.0  
+n = 7.0
+
+**Norm2:**
+v = [4.0, -3.0]  
+w = √(4.0² + 3.0²)  
+w = √(16.0 + 9.0)  
+w = √(25.0)  
+w = 5.0
+
+**L-infinity Norm:**
+v = [4.0, -3.0]  
+q = max(v)  
+q = 4.0
+
+<hr>
+
+##### Unit Vector
+
+v̂
+
+##### Example:
+
+Converting a Norm vector to a unit vector:
+
+v̂ = v / ||v||
 
 ---
 
