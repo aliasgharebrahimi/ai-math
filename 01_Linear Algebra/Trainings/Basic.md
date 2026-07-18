@@ -55,9 +55,11 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
 ### 🔢 Mathematical explanation
 #### Presenting formulas and examining concepts mathematically.
+<hr>
 
 ##### Scalar:
 $c = 6.2$
+<hr>
 
 ##### Vector:
 $$
@@ -66,10 +68,9 @@ $$
 
 ##### Scaling a Vector by a Scalar:
 Multiplying a vector by a scalar scales its magnitude:
-
-$$
-c \cdot \mathbf{v} = \begin{bmatrix} c + v_1 \\ c + v_2 \\ c + v_3 \end{bmatrix}
-$$
+ 
+   α · v = [αv₁, αv₂, ..., αvₙ]
+<hr>
 
 ##### Matrix:
 $$
@@ -80,16 +81,23 @@ a_{31} & a_{32} & a_{33}
 \end{bmatrix}
 $$
 
-##### Vector Norm Definitions
+<hr>
+
+##### Norm
 
 Given a vector $\mathbf{v} = [v_1, v_2, \dots, v_n]$, the different norms are defined as:
 
 1. **L1 Norm (Manhattan Norm):**
-∑ |vᵢ|
+
+      ∑ |vᵢ|
+
 2. **L2 Norm (Euclidean Norm):**
-√(∑ |vᵢ|²)
+
+      √(∑ |vᵢ|²)
+
 3. **L-infinity Norm (Max Norm):**
-max(|vᵢ|)
+
+      max(|vᵢ|)
 ---
 
 ## 💡 Important Notes
