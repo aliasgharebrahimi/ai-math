@@ -180,7 +180,7 @@ b = [4, 3, 3]
 
 Dot Product : 
 
-z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3]
+z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3] = [32 + 18 + 3] = 53
 
 Norm a, b:
 
@@ -195,9 +195,19 @@ n2 = 5.8309518948453
 
 Paste into the formula :
 
-cos(theta) = z / (n1 * n2) = [32, 18, 3] / (10.04987562112089 * 5.8309518948453)
-cos(theta) = [32, 18, 3] / 58.60034129593444
-cos(theta) = 
+cos(theta) = z / (n1 * n2) = 53 / (10.04987562112089 * 5.8309518948453)
+cos(theta) = 53 / 58.60034129593444
+cos(theta) = 0.9044315925115102
+
+So, we have found the cosine of the angle; this value indicates the degree of alignment between the two lines. First, we need to convert it into degrees using the arccos function:
+
+theta_radian = arccos(cos(theta))
+theta_radian = 0.4405103241142635
+
+Conversion to degrees
+
+Degree = 0.4405103241142635 . 180 / π
+Degree ≈ 25.24
 
 ---
 
