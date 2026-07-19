@@ -163,6 +163,42 @@ v̂ = [0.5714285714285714, 0.4285714285714286]
 d = 0.5714285714285714 + 0.4285714285714286  
 d = 1.0
 
+<hr>
+
+##### The angle between two vectors:
+
+To obtain it, we use the cosine.
+
+The formula for obtaining it:
+
+cos(theta) = (a . b) / (|a| * |b|)
+
+##### Example:
+
+a = [8, 6, 1]
+b = [4, 3, 3]
+
+Dot Product : 
+
+z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3]
+
+Norm a, b:
+
+n1 = √(8² + 6² + 1²)
+n2 = √(4² + 3² + 3²)
+
+n1 = √(101)
+n2 = √(34)
+
+n1 = 10.04987562112089
+n2 = 5.8309518948453
+
+Paste into the formula :
+
+cos(theta) = z / (n1 * n2) = [32, 18, 3] / (10.04987562112089 * 5.8309518948453)
+cos(theta) = [32, 18, 3] / 58.60034129593444
+cos(theta) = 
+
 ---
 
 ## 💡 Important Notes
