@@ -60,3 +60,37 @@ class BasicCodes:
         return q, q2, i, i2
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32)
+
+def main():
+
+    print("="*50)
+    print("PYTORCH BASIC CONCEPTS DEMONSTRATION")
+    print("="*50)
+
+    # 1. نمایش تنسورها
+    print("\n[1] Tensors & Structures:")
+    s, rv, cv, m, t3 = objct_BasicCodes.tensors()
+    print(f" - Scalar:    {s} | Shape: {s.shape}")
+    print(f" - Row Vector: {rv} | Shape: {rv.shape}")
+    print(f" - Col Vector: {cv} | Shape: {cv.shape}")
+    print(f" - Matrix:     \n{m} | Shape: {m.shape}")
+    print(f" - 3D Tensor:  \n{t3} | Shape: {t3.shape}")
+
+    # 2. نمایش نرم‌ها
+    print("\n[2] Norm Calculations:")
+    n1, n2, nb = objct_BasicCodes.norm()
+    print(f" - L1 Norm:    {n1.item():.4f}")
+    print(f" - L2 Norm:    {n2.item():.4f}")
+    print(f" - L-inf Norm: {nb.item():.4f}")
+
+    # 3. نمایش بردار واحد
+    print("\n[3] Unit Vector Check:")
+    q, q2, is_u, is_not_u = objct_BasicCodes.unit_vector()
+    print(f" - Vector u norm: {q.item():.2f} | Is Unit? {is_u.item()}")
+    print(f" - Vector v norm: {q2.item():.2f} | Is Unit? {is_not_u.item()}")
+
+    print("\n" + "="*50)
+
+if __name__ == "__main__":
+
+    main()
