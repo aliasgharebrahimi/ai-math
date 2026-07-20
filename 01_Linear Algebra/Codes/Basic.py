@@ -1,6 +1,8 @@
 import torch
 
-device = "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
+version = torch.__version__
+
 # Scalar
 
 class BasicCodes:
@@ -65,6 +67,7 @@ def main():
 
     print("="*50)
     print("PYTORCH BASIC CONCEPTS DEMONSTRATION")
+    print(f"PyTorch Version: {version}")
     print("="*50)
 
     # 1. نمایش تنسورها
