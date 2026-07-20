@@ -1,5 +1,6 @@
 import torch
 from typing import Tuple
+import torch.nn.functional as F
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -58,10 +59,13 @@ class BasicCodes:
 
 
         # Method 2
-        iscloseT = torch.isclose(self.norm_unit, torch.tensor([1.0]), rtol=0.0001) # tensor([True])
-        iscloseF = torch.isclose(self.norm_nounit, torch.tensor([1.0]), rtol=0.0001) # tensor([False])
+        self.iscloseT = torch.isclose(self.norm_unit, torch.tensor([1.0]), rtol=0.0001) # tensor([True])
+        self.iscloseF = torch.isclose(self.norm_nounit, torch.tensor([1.0]), rtol=0.0001) # tensor([False])
 
-        return self.norm_unit, self.norm_nounit, iscloseT, iscloseF
+        # Converting a vector to a unit vector
+        self.conversion_unit_vector = F.normalize(self.on_unit_vector, p=2, dim=0)
+
+        return self.norm_unit, self.norm_nounit, self.iscloseT, self.iscloseF, self.conversion_unit_vector
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=True)
 
@@ -90,9 +94,10 @@ def main():
 
     # 3. نمایش بردار واحد
     print("\n[3] Unit Vector Check:")
-    q, q2, is_u, is_not_u = objct_BasicCodes.unit_vector()
+    q, q2, is_u, is_not_u, c = objct_BasicCodes.unit_vector()
     print(f" - Vector u norm: {q.item():.2f} | Is Unit? {is_u.item()}")
     print(f" - Vector v norm: {q2.item():.2f} | Is Unit? {is_not_u.item()}")
+    print(c)
 
     print("\n" + "="*50)
 
