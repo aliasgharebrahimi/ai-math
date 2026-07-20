@@ -14,54 +14,54 @@ class BasicCodes:
         self.requires_grad = requires_grad
 
     def tensors(self) -> Tuple[torch.Tensor, ...]:
-        scalar = torch.tensor([6.2], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([1])
+        self.scalar = torch.tensor([6.2], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([1])
 
         # Vector
         # Of course, in PyTorch, row vectors and column vectors are not distinct in the way they are in mathematics.
-        row_vector = torch.tensor([6.2, 5.3, 8.6], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad) # torch.Size([3]) 
+        self.row_vector = torch.tensor([6.2, 5.3, 8.6], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad) # torch.Size([3]) 
 
-        column_vector = torch.tensor([7.0,
+        self.column_vector = torch.tensor([7.0,
                                       12.3,
                                       1.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad) # torch.Size([3])
         
         # matrix
-        matrix = torch.tensor([[2., 1., 6.],
+        self.matrix = torch.tensor([[2., 1., 6.],
                                [8., 9., 4.],
                                [7., 1., 6.]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([3, 3])
 
         # tensor 3d
-        tensor = torch.tensor([[[4., 4.],
+        self.tensor = torch.tensor([[[4., 4.],
                                 [7., 8.]],
                        
                                 [[7., 2.],
                                  [1., 1.]]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([2, 2, 2])
         
-        return scalar, row_vector, column_vector, matrix, tensor
+        return self.scalar, self.row_vector, self.column_vector, self.matrix, self.tensor
         
     def norm(self) -> Tuple[torch.Tensor, ...]:
         # Norm
-        vector_norm = torch.tensor([1.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        norm1 = torch.linalg.norm(vector_norm, ord=1) # tensor(10., grad_fn=<LinalgVectorNormBackward0>)
-        norm2 = torch.linalg.norm(vector_norm, ord=2)  # tensor(9.0554, grad_fn=<LinalgVectorNormBackward0>)
-        normb = torch.linalg.norm(vector_norm, ord=float("inf"))  # tensor(9., grad_fn=<LinalgVectorNormBackward0>)
+        self.vector_norm = torch.tensor([1.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.norm1 = torch.linalg.norm(self.vector_norm, ord=1) # tensor(10., grad_fn=<LinalgVectorNormBackward0>)
+        self.norm2 = torch.linalg.norm(self.vector_norm, ord=2)  # tensor(9.0554, grad_fn=<LinalgVectorNormBackward0>)
+        self.normb = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9., grad_fn=<LinalgVectorNormBackward0>)
 
-        return norm1, norm2, normb
+        return self.norm1, self.norm2, self.normb
 
     def unit_vector(self) -> Tuple[torch.Tensor, ...]:
         # Two ways to understand a Unit Vector
-        u = torch.tensor([1.0, 0.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        v = torch.tensor([8.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.unit_vector1 = torch.tensor([1.0, 0.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.on_unit_vector = torch.tensor([8.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
 
         # Method 1
-        q = torch.norm(u) # tensor(1.)
-        q2 = torch.norm(v) # tensor(12.0416)
+        self.norm_unit = torch.norm(self.unit_vector1) # tensor(1.)
+        self.norm_nounit = torch.norm(self.on_unit_vector) # tensor(12.0416)
 
 
         # Method 2
-        i = torch.isclose(q, torch.tensor([1.0]), rtol=0.0001) # tensor([True])
-        i2 = torch.isclose(q2, torch.tensor([1.0]), rtol=0.0001) # tensor([False])
+        iscloseT = torch.isclose(self.norm_unit, torch.tensor([1.0]), rtol=0.0001) # tensor([True])
+        iscloseF = torch.isclose(self.norm_nounit, torch.tensor([1.0]), rtol=0.0001) # tensor([False])
 
-        return q, q2, i, i2
+        return self.norm_unit, self.norm_nounit, iscloseT, iscloseF
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=True)
 
