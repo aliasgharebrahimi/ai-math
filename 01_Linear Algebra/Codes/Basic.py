@@ -1,4 +1,5 @@
 import torch
+from typing import Tuple
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -11,7 +12,7 @@ class BasicCodes:
         self.device = device
         self.dtype = dtype
 
-    def tensors(self):
+    def tensors(self) -> Tuple[torch.Tensor, ...]:
         scalar = torch.tensor([6.2], device=self.device, dtype=self.dtype)  # torch.Size([1])
 
         # Vector
@@ -36,7 +37,7 @@ class BasicCodes:
         
         return scalar, row_vector, column_vector, matrix, tensor
         
-    def norm(self):
+    def norm(self) -> Tuple[torch.Tensor, ...]:
         # Norm
         vector_norm = torch.tensor([1.0, 9.0], device=self.device, dtype=self.dtype)
         norm1 = torch.linalg.norm(vector_norm, ord=1) # tensor(10., grad_fn=<LinalgVectorNormBackward0>)
@@ -45,7 +46,7 @@ class BasicCodes:
 
         return norm1, norm2, normb
 
-    def unit_vector(self):
+    def unit_vector(self) -> Tuple[torch.Tensor, ...]:
         # Two ways to understand a Unit Vector
         u = torch.tensor([1.0, 0.0], device=self.device, dtype=self.dtype)
         v = torch.tensor([8.0, 9.0], device=self.device, dtype=self.dtype)
