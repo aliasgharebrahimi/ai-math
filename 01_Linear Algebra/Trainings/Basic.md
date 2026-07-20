@@ -31,7 +31,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
-| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | |
+| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | theta = arccos( (a . b) / (||a|| * ||b||) ) |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
 | **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | |
@@ -196,17 +196,21 @@ n2 = 5.8309518948453
 Paste into the formula :
 
 cos(theta) = z / (n1 * n2) = 53 / (10.04987562112089 * 5.8309518948453)
+
 cos(theta) = 53 / 58.60034129593444
+
 cos(theta) = 0.9044315925115102
 
 So, we have found the cosine of the angle; this value indicates the degree of alignment between the two lines. First, we need to convert it into degrees using the arccos function:
 
 theta_radian = arccos(cos(theta))
+
 theta_radian = 0.4405103241142635
 
 Conversion to degrees
 
 Degree = 0.4405103241142635 . 180 / π
+
 Degree ≈ 25.24
 
 ---
