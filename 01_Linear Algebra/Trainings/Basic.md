@@ -31,7 +31,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
-| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | theta = arccos( (a . b) / (||a|| * ||b||) ) |
+| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | theta = arccos( (\|\|a\|\| * \|\|b\|\|) ) |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
 | **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | |
@@ -212,6 +212,12 @@ Conversion to degrees
 Degree = 0.4405103241142635 . 180 / π
 
 Degree ≈ 25.24
+
+##### Solving a system of linear equations using the Gaussian method and an augmented matrix:
+
+##### Stages:
+
+
 
 ---
 
