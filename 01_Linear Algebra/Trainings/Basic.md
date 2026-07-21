@@ -126,6 +126,7 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 `w = 5.0`
 
 **L-infinity Norm:**
+
 `v = [4.0, -3.0]`  
 `q = max(v)`  
 `q = 4.0`
