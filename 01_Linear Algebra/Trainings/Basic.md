@@ -229,15 +229,15 @@ So, we have found the cosine of the angle; this value indicates the degree of al
 2. **Forward Elimination (Row Operations):** Perform row operations to transform the matrix into **Row Echelon Form** (making all elements below the main diagonal equal to zero).
 3. **Back Substitution:** Convert the simplified matrix back into equations and solve for the variables starting from the last one.
 
-## Formula
+**Formula**
 
 `R_i ← R_i - (a_i,j / a_p,j) × R_p`
 
-## Explanation of the formula
+**Explanation of the formula**
 
 Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the element in the same column in the row above). Multiply the result by the upper row `R_p`. Subtract this product from the lower row `R_i` and replace the lower row with the new values.
 
-## Example:
+**Example:**
 
 **System of equations:**
 
