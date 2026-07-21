@@ -66,6 +66,41 @@ class BasicCodes:
         self.conversion_unit_vector = F.normalize(self.on_unit_vector, p=2, dim=0)
 
         return self.norm_unit, self.norm_nounit, self.iscloseT, self.iscloseF, self.conversion_unit_vector
+    
+    def Angle(self) -> Tuple[torch.Tensor, ...]:
+
+        """
+        First, we set the vector's length to 1; having 1 in the denominator means the 
+        result remains unchanged, which significantly reduces the amount of calculation required
+        Determining the angle using a method that minimizes calculations.
+        """
+
+        # Definition of two vectors
+        self.angle_v1 = torch.tensor([8.0, 1.0, 3.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.angle_v2 = torch.tensor([4.0, 8.0, 7.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+
+        # Conversion to a unit vector
+        self.angle_v1_norml = F.normalize(self.angle_v1, p=2, dim=0)
+        self.angle_v2_norm2 = F.normalize(self.angle_v2, p=2, dim=0)
+
+        # Computing the dot product
+        # Here, since the norms of the vectors are 1, division is not necessary.
+        
+        self.cos_tehta_dot = torch.dot(self.angle_v1_norml, self.angle_v2_norm2)
+
+        # Limiting the cosine to prevent errors
+        self.cos_theta_clamp = torch.clamp(self.cos_tehta_dot, 1.0, -1.0)
+
+        # angle
+        self.angle = torch.arccos(self.cos_theta_clamp)
+
+        # Converting radians to degrees
+        self.angle_in_degrees = torch.rad2deg(self.angle)
+
+        return self.angle_in_degrees
+
+
+        
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=True)
 
