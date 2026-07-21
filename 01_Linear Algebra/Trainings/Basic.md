@@ -59,165 +59,153 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 <hr>
 
-# Scalar:
-c = 6.2
+# Linear Algebra Fundamentals
 
-<hr>
+# Scalar:
+`c = 6.2`
+
+---
 
 # Vector:
-v = [v₁, v₂, v₃] ,   u = [u₁, u₂, u₃]
+`v = [v₁, v₂, v₃]` , `u = [u₁, u₂, u₃]`
 
 #### Example:
-v = [6.2, 5.3, 8.6]
+`v = [6.2, 5.3, 8.6]`
 
-<hr>
+---
 
 #### Scaling a Vector by a Scalar:
-α · v = [αv₁, αv₂, ..., αvₙ]
+`α · v = [αv₁, αv₂, ..., αvₙ]`
 
 #### Example:
-α = 6.0  
-v = [1.0, 2.0, 6.0]
+`α = 6.0`  
+`v = [1.0, 2.0, 6.0]`
 
-z = α · v = [1.0 × 6.0, 2.0 × 6.0, 6.0 × 6.0]  
-z = [6.0, 12.0, 36.0]
+`z = α · v = [1.0 × 6.0, 2.0 × 6.0, 6.0 × 6.0]`  
+`z = [6.0, 12.0, 36.0]`
 
-<hr>
+---
 
 # Matrix:
-A = [a₁₁, a₁₂, a₁₃],  
-    [a₂₁, a₂₂, a₂₃],  
-    [a₃₁, a₃₂, a₃₃]
+`A = [a₁₁, a₁₂, a₁₃],`  
+`    [a₂₁, a₂₂, a₂₃],`  
+`    [a₃₁, a₃₂, a₃₃]`
 
 #### Example:
-B = [2., 1., 6.],  
-    [8., 9., 4.],  
-    [7., 1., 6.]
+`B = [2., 1., 6.],`  
+`    [8., 9., 4.],`  
+`    [7., 1., 6.]`
 
-<hr>
+---
 
 # Norm
 
-Given a vector v = [v₁, v₂, ..., vₙ], the different norms are defined as:
+Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as:
 
 1. **L1 Norm (Manhattan Norm):**
-   ∑ |vᵢ|
+   `∑ |vᵢ|`
 
 2. **L2 Norm (Euclidean Norm):**
-   √(∑ |vᵢ|²)
+   `√(∑ |vᵢ|²)`
 
 3. **L-infinity Norm (Max Norm):**
-   max(|vᵢ|)
+   `max(|vᵢ|)`
 
 #### Example:
 
 **Norm1:**
-
-u = [4.0, -3.0]  
-n = 4.0 + 3.0  
-n = 7.0
+`u = [4.0, -3.0]`  
+`n = 4.0 + 3.0`  
+`n = 7.0`
 
 **Norm2:**
-
-v = [4.0, -3.0]  
-w = √(4.0² + 3.0²)  
-w = √(16.0 + 9.0)  
-w = √(25.0)  
-w = 5.0
+`v = [4.0, -3.0]`  
+`w = √(4.0² + 3.0²)`  
+`w = √(16.0 + 9.0)`  
+`w = √(25.0)`  
+`w = 5.0`
 
 **L-infinity Norm:**
+`v = [4.0, -3.0]`  
+`q = max(v)`  
+`q = 4.0`
 
-v = [4.0, -3.0]  
-q = max(v)  
-q = 4.0
-
-<hr>
+---
 
 # Unit Vector
 
-v̂
+`v̂`
 
 #### Example:
-
-v = [1.0, 0.0]  
-p = 1.0 + 0.0  
-p = 1.0  
+`v = [1.0, 0.0]`  
+`p = 1.0 + 0.0`  
+`p = 1.0`  
 
 #### Example:
-
 Converting a Norm vector to a unit vector:
-
-v̂ = v / ||v||
+`v̂ = v / ||v||`
 
 #### Example:
-
-v = [4.0, -3.0]  
-x = 4.0 + 3.0  
-x = 7.0  
-v̂ = v / x  
-v̂ = [4.0, -3.0] / 7.0  
-v̂ = [0.5714285714285714, 0.4285714285714286]
+`v = [4.0, -3.0]`  
+`x = 4.0 + 3.0`  
+`x = 7.0`  
+`v̂ = v / x`  
+`v̂ = [4.0, -3.0] / 7.0`  
+`v̂ = [0.5714285714285714, 0.4285714285714286]`
 
 #### Test:
+`d = 0.5714285714285714 + 0.4285714285714286`  
+`d = 1.0`
 
-d = 0.5714285714285714 + 0.4285714285714286  
-d = 1.0
-
-<hr>
+---
 
 # The angle between two vectors:
 
 To obtain it, we use the cosine.
 
 The formula for obtaining it:
-
-cos(theta) = (a . b) / (|a| * |b|)
+`cos(theta) = (a . b) / (|a| * |b|)`
 
 #### Example:
+`a = [8, 6, 1]`
+`b = [4, 3, 3]`
 
-a = [8, 6, 1]
-b = [4, 3, 3]
+**Dot Product:**
+`z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3] = [32 + 18 + 3] = 53`
 
-Dot Product : 
+**Norm a, b:**
+`n1 = √(8² + 6² + 1²)`
+`n2 = √(4² + 3² + 3²)`
 
-z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3] = [32 + 18 + 3] = 53
+`n1 = √(101)`
+`n2 = √(34)`
 
-Norm a, b:
+`n1 = 10.04987562112089`
+`n2 = 5.8309518948453`
 
-n1 = √(8² + 6² + 1²)
-n2 = √(4² + 3² + 3²)
+**Paste into the formula:**
+`cos(theta) = z / (n1 * n2) = 53 / (10.04987562112089 * 5.8309518948453)`
 
-n1 = √(101)
-n2 = √(34)
+`cos(theta) = 53 / 58.60034129593444`
 
-n1 = 10.04987562112089
-n2 = 5.8309518948453
-
-Paste into the formula :
-
-cos(theta) = z / (n1 * n2) = 53 / (10.04987562112089 * 5.8309518948453)
-
-cos(theta) = 53 / 58.60034129593444
-
-cos(theta) = 0.9044315925115102
+`cos(theta) = 0.9044315925115102`
 
 So, we have found the cosine of the angle; this value indicates the degree of alignment between the two lines. First, we need to convert it into degrees using the arccos function:
 
-theta_radian = arccos(cos(theta))
+`theta_radian = arccos(cos(theta))`
 
-theta_radian = 0.4405103241142635
+`theta_radian = 0.4405103241142635`
 
-Conversion to degrees
+**Conversion to degrees:**
+`Degree = 0.4405103241142635 * 180 / π`
 
-Degree = 0.4405103241142635 . 180 / π
+`Degree ≈ 25.24`
 
-Degree ≈ 25.24
+---
 
 # Solving a system of linear equations using the Gaussian method and an augmented matrix:
 
-# Stages:
-
-
+# Stages
 
 ---
 
