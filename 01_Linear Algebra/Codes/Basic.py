@@ -13,27 +13,47 @@ class BasicCodes:
         self.requires_grad = requires_grad
 
     def tensors(self) -> Tuple[torch.Tensor, ...]:
-        self.scalar = torch.tensor([6.2], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([1])
+        self.scalar = torch.tensor(
+            [6.2], 
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)  # torch.Size([1])
 
         # Vector
         # Of course, in PyTorch, row vectors and column vectors are not distinct in the way they are in mathematics.
-        self.row_vector = torch.tensor([6.2, 5.3, 8.6], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad) # torch.Size([3]) 
+        self.row_vector = torch.tensor(
+            [6.2, 5.3, 8.6],                              
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad) # torch.Size([3]) 
 
-        self.column_vector = torch.tensor([7.0,
-                                      12.3,
-                                      1.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad) # torch.Size([3])
+        self.column_vector = torch.tensor(
+            [7.0,
+            12.3,
+            1.0], 
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad) # torch.Size([3])
         
         # matrix
-        self.matrix = torch.tensor([[2., 1., 6.],
-                               [8., 9., 4.],
-                               [7., 1., 6.]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([3, 3])
+        self.matrix = torch.tensor([
+            [2., 1., 6.],
+            [8., 9., 4.],
+            [7., 1., 6.]
+            ], device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)  # torch.Size([3, 3])
 
         # tensor 3d
-        self.tensor = torch.tensor([[[4., 4.],
-                                [7., 8.]],
-                       
-                                [[7., 2.],
-                                 [1., 1.]]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)  # torch.Size([2, 2, 2])
+        self.tensor = torch.tensor([
+            [[4., 4.],
+             [7., 8.]],    
+             
+            [[7., 2.],
+             [1., 1.]]
+            ],device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)  # torch.Size([2, 2, 2])
         
         return self.scalar, self.row_vector, self.column_vector, self.matrix, self.tensor
         
