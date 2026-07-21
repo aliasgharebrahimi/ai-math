@@ -74,8 +74,8 @@ class BasicCodes:
         """
 
         # Definition of two vectors
-        self.angle_v1 = torch.tensor([1.0, 1.0, 1.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        self.angle_v2 = torch.tensor([2.0, 2.0, 2.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.angle_v1 = torch.tensor([8.0, 1.0, 3.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.angle_v2 = torch.tensor([4.0, 8.0, 7.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
 
         # Conversion to a unit vector
         self.angle_v1_norml = F.normalize(self.angle_v1, p=2, dim=0)
