@@ -237,6 +237,43 @@ So, we have found the cosine of the angle; this value indicates the degree of al
 
 Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the element in the same column in the row above). Multiply the result by the upper row `R_p`. Subtract this product from the lower row `R_i` and replace the lower row with the new values.
 
+## Example:
+
+**System of equations:**
+
+`2x + 4y = 12`
+`4x + 2y = 18`
+
+**Convert to augmented matrix:**
+
+`[2 4 | 12],`
+`[4 2 | 18]`
+
+**Divide the number below the diagonal by the number above it in the same column:**
+
+`4 / 2 = 2`
+
+**Multiply by the top row:**
+
+`2 . [2 4 | 12] = [4 8 | 24]`
+
+**Subtract the obtained row from the row below it:**
+
+`[4 8 | 24] - [4 2 | 18] = [0 6 | 6]`
+
+**Plugin Matrix Update:**
+
+`[2 4 | 12]`
+`[0 6 | 6]`
+
+**Solving an equation:**
+
+`2x + 4y = 12`
+`0x + 6y = 6`
+
+`x = 4`
+`y = 1`
+
 ---
 
 ## 💡 Important Notes
