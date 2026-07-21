@@ -59,23 +59,23 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 <hr>
 
-##### Scalar:
+# Scalar:
 c = 6.2
 
 <hr>
 
-##### Vector:
+# Vector:
 v = [v₁, v₂, v₃] ,   u = [u₁, u₂, u₃]
 
-##### Example:
+#### Example:
 v = [6.2, 5.3, 8.6]
 
 <hr>
 
-##### Scaling a Vector by a Scalar:
+#### Scaling a Vector by a Scalar:
 α · v = [αv₁, αv₂, ..., αvₙ]
 
-##### Example:
+#### Example:
 α = 6.0  
 v = [1.0, 2.0, 6.0]
 
@@ -84,19 +84,19 @@ z = [6.0, 12.0, 36.0]
 
 <hr>
 
-##### Matrix:
+# Matrix:
 A = [a₁₁, a₁₂, a₁₃],  
     [a₂₁, a₂₂, a₂₃],  
     [a₃₁, a₃₂, a₃₃]
 
-##### Example:
+#### Example:
 B = [2., 1., 6.],  
     [8., 9., 4.],  
     [7., 1., 6.]
 
 <hr>
 
-##### Norm
+# Norm
 
 Given a vector v = [v₁, v₂, ..., vₙ], the different norms are defined as:
 
@@ -109,7 +109,7 @@ Given a vector v = [v₁, v₂, ..., vₙ], the different norms are defined as:
 3. **L-infinity Norm (Max Norm):**
    max(|vᵢ|)
 
-##### Example:
+#### Example:
 
 **Norm1:**
 
@@ -133,23 +133,23 @@ q = 4.0
 
 <hr>
 
-##### Unit Vector
+# Unit Vector
 
 v̂
 
-##### Example:
+#### Example:
 
 v = [1.0, 0.0]  
 p = 1.0 + 0.0  
 p = 1.0  
 
-##### Example:
+#### Example:
 
 Converting a Norm vector to a unit vector:
 
 v̂ = v / ||v||
 
-##### Example:
+#### Example:
 
 v = [4.0, -3.0]  
 x = 4.0 + 3.0  
@@ -158,14 +158,14 @@ v̂ = v / x
 v̂ = [4.0, -3.0] / 7.0  
 v̂ = [0.5714285714285714, 0.4285714285714286]
 
-##### Test:
+#### Test:
 
 d = 0.5714285714285714 + 0.4285714285714286  
 d = 1.0
 
 <hr>
 
-##### The angle between two vectors:
+# The angle between two vectors:
 
 To obtain it, we use the cosine.
 
@@ -173,7 +173,7 @@ The formula for obtaining it:
 
 cos(theta) = (a . b) / (|a| * |b|)
 
-##### Example:
+#### Example:
 
 a = [8, 6, 1]
 b = [4, 3, 3]
@@ -213,9 +213,9 @@ Degree = 0.4405103241142635 . 180 / π
 
 Degree ≈ 25.24
 
-##### Solving a system of linear equations using the Gaussian method and an augmented matrix:
+# Solving a system of linear equations using the Gaussian method and an augmented matrix:
 
-##### Stages:
+# Stages:
 
 
 
