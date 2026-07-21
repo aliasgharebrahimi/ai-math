@@ -60,29 +60,24 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 <hr>
 
 # Linear Algebra Fundamentals
-<br>
+
 # Scalar:
-<br>
 `c = 6.2`
 
 ---
 
 # Vector:
-<br>
 `v = [v₁, v₂, v₃]` , `u = [u₁, u₂, u₃]`
 
 #### Example:
-
 `v = [6.2, 5.3, 8.6]`
 
 ---
 
 #### Scaling a Vector by a Scalar:
-
 `α · v = [αv₁, αv₂, ..., αvₙ]`
 
 #### Example:
-
 `α = 6.0`  
 `v = [1.0, 2.0, 6.0]`
 
@@ -92,13 +87,11 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ---
 
 # Matrix:
-<br>
 `A = [a₁₁, a₁₂, a₁₃],`  
 `    [a₂₁, a₂₂, a₂₃],`  
 `    [a₃₁, a₃₂, a₃₃]`
 
 #### Example:
-
 `B = [2., 1., 6.],`  
 `    [8., 9., 4.],`  
 `    [7., 1., 6.]`
@@ -106,7 +99,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ---
 
 # Norm
-<br>
+
 Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as:
 
 1. **L1 Norm (Manhattan Norm):**
@@ -121,13 +114,11 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 #### Example:
 
 **Norm1:**
-
 `u = [4.0, -3.0]`  
 `n = 4.0 + 3.0`  
 `n = 7.0`
 
 **Norm2:**
-
 `v = [4.0, -3.0]`  
 `w = √(4.0² + 3.0²)`  
 `w = √(16.0 + 9.0)`  
@@ -135,7 +126,6 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 `w = 5.0`
 
 **L-infinity Norm:**
-
 `v = [4.0, -3.0]`  
 `q = max(v)`  
 `q = 4.0`
@@ -143,23 +133,19 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 ---
 
 # Unit Vector
-<br>
+
 `v̂`
 
 #### Example:
-
 `v = [1.0, 0.0]`  
 `p = 1.0 + 0.0`  
 `p = 1.0`  
 
 #### Example:
-
 Converting a Norm vector to a unit vector:
-
 `v̂ = v / ||v||`
 
 #### Example:
-
 `v = [4.0, -3.0]`  
 `x = 4.0 + 3.0`  
 `x = 7.0`  
@@ -168,31 +154,26 @@ Converting a Norm vector to a unit vector:
 `v̂ = [0.5714285714285714, 0.4285714285714286]`
 
 #### Test:
-
 `d = 0.5714285714285714 + 0.4285714285714286`  
 `d = 1.0`
 
 ---
 
 # The angle between two vectors:
-<br>
+
 To obtain it, we use the cosine.
 
 The formula for obtaining it:
-
 `cos(theta) = (a . b) / (|a| * |b|)`
 
 #### Example:
-
 `a = [8, 6, 1]`
 `b = [4, 3, 3]`
 
 **Dot Product:**
-
 `z = a . b = [8, 6, 1] . [4, 3, 3] = [32, 18, 3] = [32 + 18 + 3] = 53`
 
 **Norm a, b:**
-
 `n1 = √(8² + 6² + 1²)`
 `n2 = √(4² + 3² + 3²)`
 
@@ -203,7 +184,6 @@ The formula for obtaining it:
 `n2 = 5.8309518948453`
 
 **Paste into the formula:**
-
 `cos(theta) = z / (n1 * n2) = 53 / (10.04987562112089 * 5.8309518948453)`
 
 `cos(theta) = 53 / 58.60034129593444`
@@ -217,7 +197,6 @@ So, we have found the cosine of the angle; this value indicates the degree of al
 `theta_radian = 0.4405103241142635`
 
 **Conversion to degrees:**
-
 `Degree = 0.4405103241142635 * 180 / π`
 
 `Degree ≈ 25.24`
