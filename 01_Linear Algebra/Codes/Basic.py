@@ -97,18 +97,21 @@ class BasicCodes:
 
         return self.angle_in_degrees
     
-    def gauss_equation(self) ->Tuple[torch.Tensor, ...]:
+    def gauss1(self) ->Tuple[torch.Tensor, ...]:
 
         # Constructing an augmented matrix
-        self.coefficients = torch.tensor([[2, 4],
-                                          [4, 2]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        self.answer = torch.tensor([12, 18], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.a = torch.tensor([[2, 4],
+                               [4, 2]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.b = torch.tensor([12, 18], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.z = torch.unsqueeze(self.b, dim=1)
+        self.x = torch.cat([self.a, self.z], dim=1)
 
-        self.plugin = torch.cat([self.coefficients, self.answer.unsqueeze(1)], dim=1)
+        # Solving by Gauss's method
+        self.gauss = torch.linalg.solve(self.a, self.z, )
 
-        return self.plugin
+        return self.x, self.gauss
 
-objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=True)
+objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
 
@@ -146,8 +149,10 @@ def main():
     print(f"angle 2vector: {angle}")
 
     # 4. gauss_equation
-    plugin = objct_BasicCodes.gauss_equation()
-    print(f"matrix plugin:{plugin}")
+    p, x = objct_BasicCodes.gauss1()
+    print("\n[4] gauss:")
+    print(f" - matrix plugin:{p}")
+    print(f" - x:{x[0]}, y:{x[1].detach()}")
 
     print("\n" + "="*50)
 
