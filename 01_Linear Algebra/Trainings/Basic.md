@@ -60,15 +60,15 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 <hr>
 
 # Linear Algebra Fundamentals
-
+<br>
 # Scalar:
-
+<br>
 `c = 6.2`
 
 ---
 
 # Vector:
-
+<br>
 `v = [v₁, v₂, v₃]` , `u = [u₁, u₂, u₃]`
 
 #### Example:
@@ -92,7 +92,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ---
 
 # Matrix:
-
+<br>
 `A = [a₁₁, a₁₂, a₁₃],`  
 `    [a₂₁, a₂₂, a₂₃],`  
 `    [a₃₁, a₃₂, a₃₃]`
@@ -106,7 +106,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ---
 
 # Norm
-
+<br>
 Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as:
 
 1. **L1 Norm (Manhattan Norm):**
@@ -143,7 +143,7 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 ---
 
 # Unit Vector
-
+<br>
 `v̂`
 
 #### Example:
@@ -175,7 +175,7 @@ Converting a Norm vector to a unit vector:
 ---
 
 # The angle between two vectors:
-
+<br>
 To obtain it, we use the cosine.
 
 The formula for obtaining it:
