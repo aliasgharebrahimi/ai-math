@@ -54,11 +54,6 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A) |
 | **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
 
-### 🔢 Mathematical explanation
-#### Presenting formulas and examining concepts mathematically.
-
-<hr>
-
 # Linear Algebra Fundamentals
 
 # Scalar:
@@ -114,11 +109,13 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 #### Example:
 
 **Norm1:**
+
 `u = [4.0, -3.0]`  
 `n = 4.0 + 3.0`  
 `n = 7.0`
 
 **Norm2:**
+
 `v = [4.0, -3.0]`  
 `w = √(4.0² + 3.0²)`  
 `w = √(16.0 + 9.0)`  
@@ -126,6 +123,7 @@ Given a vector `v = [v₁, v₂, ..., vₙ]`, the different norms are defined as
 `w = 5.0`
 
 **L-infinity Norm:**
+
 `v = [4.0, -3.0]`  
 `q = max(v)`  
 `q = 4.0`
