@@ -97,7 +97,7 @@ def main():
     q, q2, is_u, is_not_u, c = objct_BasicCodes.unit_vector()
     print(f" - Vector u norm: {q.item():.2f} | Is Unit? {is_u.item()}")
     print(f" - Vector v norm: {q2.item():.2f} | Is Unit? {is_not_u.item()}")
-    print(c)
+    print(f" - vector v unit = {c}")
 
     print("\n" + "="*50)
 
