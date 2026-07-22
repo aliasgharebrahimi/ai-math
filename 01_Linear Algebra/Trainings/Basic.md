@@ -36,7 +36,7 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | - |
 | **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | Rv |
 | **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | a . v |
-| **Shear** | This means changing its spatial shape without changing its area. | |
+| **Shear** | This means changing its spatial shape without changing its area. | v' |
 | **Scaling** | This implies a change in its area and, in some cases, a change in its spatial shape—naturally, taking proportionality into account. | |
 | **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x) |
 | **180-degree turn** | In the form (x, y) → (-x, -y) | (x, y) → (-x, -y) |
@@ -314,7 +314,32 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 # Shear
 
+**Formula:**
 
+**Shear on the x-axis:**
+
+x' = x + k × y
+y' = y
+
+**Shear on the y-axis:**
+
+x' = x
+y' = y + k × x
+
+**Example**
+
+v = [9.0, 2.0]
+
+**x:**
+
+`k = 2`
+
+`x' = 9.0 + 2.0 . 2.0`
+`x' = 13.0`
+
+`y' = 2.0`
+
+`v' = [13.0, 2.0]`
 
 ---
 
