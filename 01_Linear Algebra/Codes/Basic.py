@@ -183,9 +183,11 @@ class BasicCodes:
         self.x = torch.cat([self.a, self.z], dim=1)
 
         # Solving by Gauss's method
-        self.gauss = torch.linalg.solve(self.a, self.z, )
+        self.gauss = torch.linalg.solve(self.a, self.z)
 
         return self.x, self.gauss
+
+    def
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 

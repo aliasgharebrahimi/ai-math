@@ -32,8 +32,8 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
 | **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | cos(θ) = (a · b) / ( ‖a‖ . ‖b‖ ) |
-| **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | |
-| **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | |
+| **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | `R_i ← R_i - (a_i,j / a_p,j) × R_p` |
+| **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | - |
 | **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | |
 | **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | |
 | **Shear** | This means changing its spatial shape without changing its area. | |
@@ -273,6 +273,10 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 `x = 4`
 `y = 1`
+
+# Reflection
+
+
 
 ---
 
