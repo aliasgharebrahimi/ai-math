@@ -276,6 +276,8 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 # Reflection
 
+`Rv`
+
 **Its formula is as follows:**
 
 **x-axis**
@@ -285,6 +287,30 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 **y-axis**
 
 `(x, y) → (-x, y)`
+
+**Example:**
+
+`v = [8., 9.]`
+
+**Reflection across the x-axis:**
+
+`[8., 9.] → [8., -9.]`
+
+**Reflection across the y-axis:*
+
+`[8., 9.] → [-8., 9.]`
+
+**Mathematically:**
+
+`R_x = [1, 0],`
+    `[0, -1]`
+
+`R_y = [-1, 0],`
+    `[0, 1]`
+
+`z = R_xv = [8., -9.]`
+
+`z2 = R_yv = [-8., 9.]`
 
 ---
 
