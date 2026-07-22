@@ -208,9 +208,48 @@ class BasicCodes:
         dtype=self.dtype,
         requires_grad=self.requires_grad)
 
-        self.matmul = torch.matmul(self.rx, self.v_un)
+        self.ry = torch.tensor(
+            [
+                [-1., 0.],
+                [0., 1.]
+            ],
+        
+        device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
 
-        return self.matmul
+        self.matmul = torch.matmul(self.rx, self.v_un)
+        self.matmul2 = torch.matmul(self.ry, self.v_un)
+
+        return self.matmul, self.matmul2
+
+    def shear(self) -> Tuple[torch.Tensor, ...]:
+
+        self.u = torch.tensor(
+
+            [9., 2.],
+
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        self.uun = torch.unsqueeze(self.u, dim=1)
+        self.k = 2.0
+
+        self.shx = torch.tensor(
+            [
+                [1., self.k],
+                [0., 1.]
+            ],
+        
+        device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.mat1 = torch.matmul(self.shx, self.uun)
+
+        return self.mat1
+
+
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -256,9 +295,15 @@ def main():
     print(f" - x:{x[0]}, y:{x[1].detach()}")
 
     # Reflection
-    m = objct_BasicCodes.reflection()
-    print("\n[5] reflection:")
-    print(f" - a Reflection{m}")
+    m1, m2 = objct_BasicCodes.reflection()
+    print("\n[5] Reflection:")
+    print(f" - a Reflection x:{m1}")
+    print(f" - a Reflection y:{m2}")
+
+    # Shear
+    ms1 = objct_BasicCodes.shear()
+    print("\n[6] Shear:")
+    print(f" - a Shear x:{ms1}")
 
     print("\n" + "="*50)
 
