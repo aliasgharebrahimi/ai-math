@@ -318,17 +318,17 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 **Shear on the x-axis:**
 
-x' = x + k × y
-y' = y
+`x' = x + k × y`
+`y' = y`
 
 **Shear on the y-axis:**
 
-x' = x
-y' = y + k × x
+`x' = x`
+`y' = y + k × x`
 
 **Example**
 
-v = [9.0, 2.0]
+`v = [9.0, 2.0]`
 
 **x:**
 
@@ -340,6 +340,19 @@ v = [9.0, 2.0]
 `y' = 2.0`
 
 `v' = [13.0, 2.0]`
+
+**y:**
+
+`v = [9.0, 2.0]`
+
+`k = 2`
+
+`y' = 2.0 + 2.0 . 9.0`
+`y = 20.0`
+
+`x' = 9.0`
+
+`v' = [20.0, 9.0]`
 
 ---
 
