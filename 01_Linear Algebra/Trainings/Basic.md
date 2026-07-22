@@ -308,9 +308,9 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 `R_y = [-1, 0],`
     `[0, 1]`
 
-`z = R_xv = [8., -9.]`
+`z = R_x.v = [8., -9.]`
 
-`z2 = R_yv = [-8., 9.]`
+`z2 = R_y.v = [-8., 9.]`
 
 # Shear
 

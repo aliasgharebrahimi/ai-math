@@ -187,7 +187,30 @@ class BasicCodes:
 
         return self.x, self.gauss
 
-    def
+    def reflection(self) -> Tuple[torch.Tensor, ...]:
+
+        self.v = torch.tensor(
+
+            [8., 9.],
+
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        self.v_un = torch.unsqueeze(self.v, dim=1)
+
+        self.rx = torch.tensor(
+            [
+                [1., 0.],
+                [0., -1.]
+            ],
+
+        device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.matmul = torch.matmul(self.rx, self.v_un)
+
+        return self.matmul
 
 objct_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -231,6 +254,11 @@ def main():
     print("\n[4] gauss:")
     print(f" - matrix plugin:{p}")
     print(f" - x:{x[0]}, y:{x[1].detach()}")
+
+    # Reflection
+    m = objct_BasicCodes.reflection()
+    print("\n[5] reflection:")
+    print(f" - a Reflection{m}")
 
     print("\n" + "="*50)
 
