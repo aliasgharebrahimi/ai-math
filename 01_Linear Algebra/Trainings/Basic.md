@@ -303,10 +303,10 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 **Mathematically:**
 
 `R_x = [1, 0],`
-    `[0, -1]`
+`      [0, -1]`
 
 `R_y = [-1, 0],`
-    `[0, 1]`
+`      [0, 1]`
 
 `z = R_x.v = [8., -9.]`
 
@@ -357,12 +357,12 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 **The shear transformation in the 𝑥 -direction is represented by the following matrix:**
 
 `s = [1., k],`
-     `[0., 1.]`
+`    [0., 1.]`
 
 **The shear transformation in the y -direction is represented by the following matrix:**
 
 `s = [1., 0.],`
-     `[k, 1.]`
+`    [k, 1.]`
 
 ---
 
