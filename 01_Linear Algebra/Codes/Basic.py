@@ -22,44 +22,63 @@ class BasicCodes:
         # Vector
         # Of course, in PyTorch, row vectors and column vectors are not distinct in the way they are in mathematics.
         self.row_vector = torch.tensor(
-            [6.2, 5.3, 8.6],                              
+
+            [6.2, 5.3, 8.6], 
+
             device=self.device, 
             dtype=self.dtype, 
-            requires_grad=self.requires_grad) # torch.Size([3]) 
+            requires_grad=self.requires_grad
+) # torch.Size([3]) 
 
         self.column_vector = torch.tensor(
+
             [7.0,
             12.3,
             1.0], 
+
             device=self.device, 
             dtype=self.dtype, 
-            requires_grad=self.requires_grad) # torch.Size([3])
-        
+            requires_grad=self.requires_grad # torch.Size([3])
+)        
         # matrix
-        self.matrix = torch.tensor([
-            [2., 1., 6.],
-            [8., 9., 4.],
-            [7., 1., 6.]
-            ], device=self.device, 
-            dtype=self.dtype, 
-            requires_grad=self.requires_grad)  # torch.Size([3, 3])
+        self.matrix = torch.tensor(
+            [
+                [2., 1., 6.],
+                [8., 9., 4.],
+                [7., 1., 6.]
 
+            ], 
+            device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad  #
+) # torch.Size([3, 3])
+        
         # tensor 3d
-        self.tensor = torch.tensor([
+        self.tensor = torch.tensor(
+        [
             [[4., 4.],
              [7., 8.]],    
              
             [[7., 2.],
              [1., 1.]]
-            ],device=self.device, 
-            dtype=self.dtype, 
-            requires_grad=self.requires_grad)  # torch.Size([2, 2, 2])
+        ]
+        ,device=self.device, 
+        dtype=self.dtype, 
+        requires_grad=self.requires_grad
+)  # torch.Size([2, 2, 2])
         
         return self.scalar, self.row_vector, self.column_vector, self.matrix, self.tensor
         
     def norm(self) -> Tuple[torch.Tensor, ...]:
         # Norm
-        self.vector_norm = torch.tensor([1.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.vector_norm = torch.tensor(
+
+            [1.0, 9.0]
+            
+            , device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        
         self.norm1 = torch.linalg.norm(self.vector_norm, ord=1) # tensor(10., grad_fn=<LinalgVectorNormBackward0>)
         self.norm2 = torch.linalg.norm(self.vector_norm, ord=2)  # tensor(9.0554, grad_fn=<LinalgVectorNormBackward0>)
         self.normb = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9., grad_fn=<LinalgVectorNormBackward0>)
@@ -68,8 +87,20 @@ class BasicCodes:
 
     def unit_vector(self) -> Tuple[torch.Tensor, ...]:
         # Two ways to understand a Unit Vector
-        self.unit_vector1 = torch.tensor([1.0, 0.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        self.on_unit_vector = torch.tensor([8.0, 9.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.unit_vector1 = torch.tensor(
+            
+            [1.0, 0.0]
+
+            , device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        self.on_unit_vector = torch.tensor(
+
+            [8.0, 9.0]
+            
+            ,device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
 
         # Method 1
         self.norm_unit = torch.norm(self.unit_vector1) # tensor(1.)
@@ -94,8 +125,20 @@ class BasicCodes:
         """
 
         # Definition of two vectors
-        self.angle_v1 = torch.tensor([8.0, 1.0, 3.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        self.angle_v2 = torch.tensor([4.0, 8.0, 7.0], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.angle_v1 = torch.tensor(
+            
+            [1.0, 3.0]
+
+            ,device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        self.angle_v2 = torch.tensor(
+
+            [8.0, 7.0]
+
+            ,device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
 
         # Conversion to a unit vector
         self.angle_v1_norml = F.normalize(self.angle_v1, p=2, dim=0)
@@ -120,9 +163,22 @@ class BasicCodes:
     def gauss1(self) ->Tuple[torch.Tensor, ...]:
 
         # Constructing an augmented matrix
-        self.a = torch.tensor([[2, 4],
-                               [4, 2]], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
-        self.b = torch.tensor([12, 18], device=self.device, dtype=self.dtype, requires_grad=self.requires_grad)
+        self.a = torch.tensor(
+            [   
+                [2, 4],
+                [4, 2]
+            
+            ]
+            ,device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
+        self.b = torch.tensor(
+
+            [12, 18]
+
+            ,device=self.device, 
+            dtype=self.dtype, 
+            requires_grad=self.requires_grad)
         self.z = torch.unsqueeze(self.b, dim=1)
         self.x = torch.cat([self.a, self.z], dim=1)
 
