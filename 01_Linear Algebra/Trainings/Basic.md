@@ -34,8 +34,8 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 | **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | cos(θ) = (a · b) / ( ‖a‖ . ‖b‖ ) |
 | **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | R_i ← R_i - (a_i,j / a_p,j) × R_p |
 | **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | - |
-| **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | |
-| **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | |
+| **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | Rv |
+| **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | a . v |
 | **Shear** | This means changing its spatial shape without changing its area. | |
 | **Scaling** | This implies a change in its area and, in some cases, a change in its spatial shape—naturally, taking proportionality into account. | |
 | **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x) |
@@ -311,6 +311,10 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 `z = R_xv = [8., -9.]`
 
 `z2 = R_yv = [-8., 9.]`
+
+# Shear
+
+
 
 ---
 
