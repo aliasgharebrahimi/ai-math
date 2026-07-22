@@ -352,7 +352,7 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 `x' = 9.0`
 
-`v' = [20.0, 9.0]`
+`v' = [9.0, 20.0]`
 
 ---
 
