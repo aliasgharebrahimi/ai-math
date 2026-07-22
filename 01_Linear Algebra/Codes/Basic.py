@@ -245,9 +245,20 @@ class BasicCodes:
         dtype=self.dtype,
         requires_grad=self.requires_grad)
 
-        self.mat1 = torch.matmul(self.shx, self.uun)
+        self.shy = torch.tensor(
+                    [
+                        [1., 0.],
+                        [self.k, 1.]
+                    ],
+                
+                device=self.device,
+                dtype=self.dtype,
+                requires_grad=self.requires_grad)
 
-        return self.mat1
+        self.mat1 = torch.matmul(self.shx, self.uun)
+        self.mat2 = torch.matmul(self.shy, self.uun)
+
+        return self.mat1, self.mat2
 
 
 
@@ -301,9 +312,11 @@ def main():
     print(f" - a Reflection y:{m2}")
 
     # Shear
-    ms1 = objct_BasicCodes.shear()
+    ms1, ms2 = objct_BasicCodes.shear()
     print("\n[6] Shear:")
     print(f" - a Shear x:{ms1}")
+    print(f" - a Shear y:{ms2}")
+
 
     print("\n" + "="*50)
 

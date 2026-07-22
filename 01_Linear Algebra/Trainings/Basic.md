@@ -354,6 +354,16 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 `v' = [9.0, 20.0]`
 
+**The shear transformation in the 𝑥 -direction is represented by the following matrix:**
+
+`s = [1., k],`
+     `[0., 1.]`
+
+**The shear transformation in the y -direction is represented by the following matrix:**
+
+`s = [1., 0.],`
+     `[k, 1.]`
+
 ---
 
 ## 💡 Important Notes
