@@ -277,7 +277,9 @@ def main():
     print(f" - Scalar:    {s} | Shape: {s.shape}")
     print(f" - Row Vector: {rv} | Shape: {rv.shape}")
     print(f" - Col Vector: {cv} | Shape: {cv.shape}")
+    print("\n")
     print(f" - Matrix:     \n{m} | Shape: {m.shape}")
+    print("\n")
     print(f" - 3D Tensor:  \n{t3} | Shape: {t3.shape}")
 
     # 2. نمایش نرم‌ها
@@ -290,9 +292,10 @@ def main():
     # 3. نمایش بردار واحد
     print("\n[3] Unit Vector Check:")
     q, q2, is_u, is_not_u, c = object_BasicCodes.unit_vector()
+    a = object_BasicCodes.on_unit_vector
     print(f" - Vector u norm: {q.item():.2f} | Is Unit? {is_u.item()}")
     print(f" - Vector v norm: {q2.item():.2f} | Is Unit? {is_not_u.item()}")
-    print(f" - vector v unit: {c}")
+    print(f" - vector {a} unit: {c}")
 
     # 4. angle 2vector
     print("\n[4] angle 2vector:")
