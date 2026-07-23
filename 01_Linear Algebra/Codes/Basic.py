@@ -115,8 +115,8 @@ class BasicCodes:
         self.conversion_unit_vector = F.normalize(self.on_unit_vector, p=2, dim=0)
 
         return self.norm_unit, self.norm_nounit, self.iscloseT, self.iscloseF, self.conversion_unit_vector
-    
-    def Angle(self) -> Tuple[torch.Tensor, ...]:
+
+    def angle(self) -> torch.Tensor:
 
         """
         First, we set the vector's length to 1; having 1 in the denominator means the 
@@ -153,10 +153,10 @@ class BasicCodes:
         self.cos_theta_clamp = torch.clamp(self.cos_tehta_dot, 1.0, -1.0)
 
         # angle
-        self.angle = torch.arccos(self.cos_theta_clamp)
+        self.angle1 = torch.arccos(self.cos_theta_clamp)
 
         # Converting radians to degrees
-        self.angle_in_degrees = torch.rad2deg(self.angle)
+        self.angle_in_degrees = torch.rad2deg(self.angle1)
 
         return self.angle_in_degrees
     
@@ -296,7 +296,7 @@ def main():
 
     # 4. angle 2vector
     print("\n[4] angle 2vector:")
-    angle = objct_BasicCodes.Angle()
+    angle = objct_BasicCodes.angle()
     print(f"angle 2vector: {angle}")
 
     # 4. gauss_equation
