@@ -361,10 +361,40 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 
 **The shear transformation in the y -direction is represented by the following matrix:**
 
-`s = [1., 0.],`
-`    [k, 1.]`
+`s = [1., 0.],
+      [k, 1.]`
 
+# Scaling
 
+**Formula:**
+
+`sx = 2.0`
+
+`sy = 2.0`
+
+`x = x . sx`
+
+`y = y . sy`
+
+**matrix:**
+
+```
+S = [sx, 0.]
+    [0., sy]
+```
+
+**Example**
+
+`v = [6.0, 1.0]`
+
+`sx = 2.0`
+`sy = 2.0`
+
+`x = 6.0 . 2.0`
+`x = 12.0`
+
+`y = 1.0 . 2.0`
+`y = 2.0`
 
 ---
 

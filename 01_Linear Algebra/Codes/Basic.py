@@ -260,6 +260,10 @@ class BasicCodes:
 
         return self.mat1, self.mat2
 
+    def scalings(self) -> Tuple[torch.Tensor, ...]:
+
+
+
 
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
