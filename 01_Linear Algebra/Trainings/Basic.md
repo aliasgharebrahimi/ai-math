@@ -24,35 +24,35 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 ## 📚 Linear Algebra Concepts
 ### Basic Concepts
 
-| Concept | Description | Mathematical Symbol |
-| :--- | :--- | :--- |
-| **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$ |
-| **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$ |
-| **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$ |
-| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞ |
-| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂ |
-| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | cos(θ) = (a · b) / ( ‖a‖ . ‖b‖ ) |
-| **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | R_i ← R_i - (a_i,j / a_p,j) × R_p |
-| **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | - |
-| **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | Rv |
-| **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | a . v |
-| **Shear** | This means changing its spatial shape without changing its area. | v' |
-| **Scaling** | This implies a change in its area and, in some cases, a change in its spatial shape—naturally, taking proportionality into account. | |
-| **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x) |
-| **180-degree turn** | In the form (x, y) → (-x, -y) | (x, y) → (-x, -y) |
-| **270-degree turn** | In the form (x,y)→(y,−x), (x,y)→(-y,x) | (x,y)→(y,−x), (x,y)→(-y,x) |
-| **Dot Product** | An operation between two vectors that returns a scalar, measuring their alignment. | $\mathbf{a} \cdot \mathbf{b}$ |
-| **Matrix Multiplication** | An operation where the number of columns in the first matrix must match the rows in the second. | $AB$ |
-| **Linear Combination** | The sum of scaled vectors: $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \dots + c_n\mathbf{v}_n$. | $\sum_{i=1}^{n} c_i \mathbf{v}_i$ |
-| **Span** | The set of all possible linear combinations of a given set of vectors. | $\text{span}(\mathcal{B})$ |
-| **Linearly Independent** | A set where no vector can be formed by a linear combination of the others. | $\text{LI}(\mathcal{B})$ |
-| **Linearly Dependent** | A set where at least one vector is a linear combination of the others. | $\text{LD}(\mathcal{B})$ |
+| Concept | Description | Mathematical Symbol                                       |
+| :--- | :--- |:----------------------------------------------------------|
+| **Scalar** | A number used to scale vectors, representing magnitude without direction. | $c, \alpha, \lambda$                                      |
+| **Vectors** | An ordered list of numbers representing direction and magnitude in a multidimensional space. | $\mathbf{v}, \mathbf{u}$                                  |
+| **Matrices** | A rectangular array of numbers. Can represent linear transformations or collections of vectors. | $A, B$                                                    |
+| **Norm** | For a given vector, the distance from the point represented by that vector to the origin of the coordinate system is called the "Norm." | ‖v‖₁, ‖v‖₂, ‖v‖∞                                          |
+| **Unit vector** | A vector is called a unit vector if its norm is exactly 1. | v̂                                                        |
+| **The angle between two vectors** | It is very simple: it refers to the angle formed by two vectors when drawn from the same origin point. | cos(θ) = (a · b) / ( ‖a‖ . ‖b‖ )                          |
+| **Gauss's method** | A method for solving a system of linear equations, known as Gaussian elimination. | R_i ← R_i - (a_i,j / a_p,j) × R_p                         |
+| **Augmented matrix** | An augmented matrix is ​​a matrix used to solve a system of linear equations via the Gaussian method, making the solution process faster and more streamlined. | -                                                         |
+| **Reflection** | If the reflection is across the x-axis, it becomes (x, y) → (x, −y), and if it is across the y-axis, it becomes (x, y) → (−x, y). | Rv                                                        |
+| **Change the scale** | Multiplying a vector by a scalar allows for rescaling—that is, changing the size of the vector. | a . v                                                     |
+| **Shear** | This means changing its spatial shape without changing its area. | v'                                                        |
+| **Scaling** | This implies a change in its area and, in some cases, a change in its spatial shape—naturally, taking proportionality into account. | s . v |                                                    |
+| **90-degree rotation** | There is a simple rule for this: the new x-coordinate equals the negative of the old y-coordinate, and the new y-coordinate equals the old x-coordinate. Note that for a counter-clockwise rotation, a negative sign must be included; the formula is (x, y) → (-y, x). | (x, y) → (-y, x), (x, y) → (y, -x)                        |
+| **180-degree turn** | In the form (x, y) → (-x, -y) | (x, y) → (-x, -y)                                         |
+| **270-degree turn** | In the form (x,y)→(y,−x), (x,y)→(-y,x) | (x,y)→(y,−x), (x,y)→(-y,x)                                |
+| **Dot Product** | An operation between two vectors that returns a scalar, measuring their alignment. | $\mathbf{a} \cdot \mathbf{b}$                             |
+| **Matrix Multiplication** | An operation where the number of columns in the first matrix must match the rows in the second. | $AB$                                                      |
+| **Linear Combination** | The sum of scaled vectors: $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \dots + c_n\mathbf{v}_n$. | $\sum_{i=1}^{n} c_i \mathbf{v}_i$                         |
+| **Span** | The set of all possible linear combinations of a given set of vectors. | $\text{span}(\mathcal{B})$                                |
+| **Linearly Independent** | A set where no vector can be formed by a linear combination of the others. | $\text{LI}(\mathcal{B})$                                  |
+| **Linearly Dependent** | A set where at least one vector is a linear combination of the others. | $\text{LD}(\mathcal{B})$                                  |
 | **Basis** | A set that is both linearly independent and spans the entire space. | $\text{span}(\mathcal{B})=V \land \text{LI}(\mathcal{B})$ |
-| **Zero Matrix** | A matrix consisting entirely of zeros. | $\mathbf{0}$ |
-| **Matrix Transpose** | Flipping a matrix over its diagonal, switching rows and columns. | $A^\top$ |
-| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. |    I<sub>n<sub> |
-| **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A) |
-| **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$ |
+| **Zero Matrix** | A matrix consisting entirely of zeros. | $\mathbf{0}$                                              |
+| **Matrix Transpose** | Flipping a matrix over its diagonal, switching rows and columns. | $A^\top$                                                  |
+| **Identity Matrix** | A square matrix with 1s on the main diagonal and 0s elsewhere. | I<sub>n<sub>                                              |
+| **Determinant** | In short, the determinant represents the magnitude of the volume change a matrix can produce; it can provide important information about a square matrix, such as whether it is invertible. | det(A)                                                    |
+| **Matrix Inversion** | The inverse matrix $A^{-1}$ is a matrix that undoes the effect of the linear transformation produced by $A$, returning the space to its original state. This is possible only if the transformation is "non-singular"—meaning its determinant is non-zero ($\det(A) \neq 0$). | $A^{-1}$                                                  |
 
 ### 🔢 Mathematical explanation
 #### Presenting formulas and examining concepts mathematically.
@@ -388,13 +388,18 @@ S = [sx, 0.]
 `v = [6.0, 1.0]`
 
 `sx = 2.0`
+
 `sy = 2.0`
 
 `x = 6.0 . 2.0`
+
 `x = 12.0`
 
 `y = 1.0 . 2.0`
+
 `y = 2.0`
+
+`v . s = [12., 2.0]`
 
 ---
 

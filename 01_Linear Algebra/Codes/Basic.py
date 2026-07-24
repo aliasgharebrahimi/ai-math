@@ -260,11 +260,31 @@ class BasicCodes:
 
         return self.mat1, self.mat2
 
-    def scalings(self) -> Tuple[torch.Tensor, ...]:
+    def scaling(self) -> Tuple[torch.Tensor, ...]:
 
+        self.v = torch.tensor(
 
+            [6.0, 1.0],
 
+        device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+        self.v1 = torch.unsqueeze(self.v, dim=1)
+        self.sx = 2.0
+        self.sy = 2.0
 
+        self.s = torch.tensor(
+            [
+                [self.sx, 0.],
+                [0., self.sy]
+            ]
+        ,device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+
+        self.sca = torch.matmul(self.s, self.v1)
+
+        return self.sca
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -330,6 +350,12 @@ def main():
     print("[6] Shear:")
     print(f" - a Shear x:{ms1}")
     print(f" - a Shear y:{ms2}")
+
+    # Scaling
+    print(60 * "=")
+    sca = object_BasicCodes.scaling()
+    print("[7] Scaling:")
+    print(f" - a Scaling vector: {sca}")
 
 if __name__ == "__main__":
 
