@@ -269,7 +269,6 @@ class BasicCodes:
         device = self.device,
         dtype = self.dtype,
         requires_grad = self.requires_grad)
-        self.v1 = torch.unsqueeze(self.v, dim=1)
         self.sx = 2.0
         self.sy = 2.0
 
@@ -282,7 +281,7 @@ class BasicCodes:
         dtype = self.dtype,
         requires_grad = self.requires_grad)
 
-        self.sca = torch.matmul(self.s, self.v1)
+        self.sca = torch.matmul(self.s, self.v)
 
         return self.sca
 
@@ -418,9 +417,15 @@ def main():
     # Rotation 90
     print(60 * "=")
     ro, ro_ = object_BasicCodes.ro90()
-    print("[9] Rotation:")
-    print(f"- a Rotation 90:{ro}")
-    print(f"- a Rotation -90:{ro_}")
+    print("[9] Rotation 90:")
+    print(f" - a Rotation 90:{ro}")
+    print(f" - a Rotation -90:{ro_}")
+
+    # Rotation 180
+    print(60 * "=")
+    ro2 = object_BasicCodes.ro180()
+    print("[10] Rotation 180:")
+    print(f" - a Rotation 180:{ro2}")
 
 if __name__ == "__main__":
 
