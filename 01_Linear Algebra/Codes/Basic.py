@@ -196,7 +196,6 @@ class BasicCodes:
             device=self.device, 
             dtype=self.dtype, 
             requires_grad=self.requires_grad)
-        self.v_un = torch.unsqueeze(self.v, dim=1)
 
         self.rx = torch.tensor(
             [
@@ -218,8 +217,8 @@ class BasicCodes:
         dtype=self.dtype,
         requires_grad=self.requires_grad)
 
-        self.matmul = torch.matmul(self.rx, self.v_un)
-        self.matmul2 = torch.matmul(self.ry, self.v_un)
+        self.matmul = torch.matmul(self.rx, self.v)
+        self.matmul2 = torch.matmul(self.ry, self.v)
 
         return self.matmul, self.matmul2
 
@@ -232,7 +231,6 @@ class BasicCodes:
             device=self.device, 
             dtype=self.dtype, 
             requires_grad=self.requires_grad)
-        self.uun = torch.unsqueeze(self.u, dim=1)
         self.k = 2.0
 
         self.shx = torch.tensor(
@@ -255,8 +253,8 @@ class BasicCodes:
                 dtype=self.dtype,
                 requires_grad=self.requires_grad)
 
-        self.mat1 = torch.matmul(self.shx, self.uun)
-        self.mat2 = torch.matmul(self.shy, self.uun)
+        self.mat1 = torch.matmul(self.shx, self.u)
+        self.mat2 = torch.matmul(self.shy, self.u)
 
         return self.mat1, self.mat2
 
