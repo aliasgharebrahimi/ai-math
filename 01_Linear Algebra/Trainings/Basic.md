@@ -401,7 +401,7 @@ S = [sx, 0.]
 
 `v . s = [12., 2.0]`
 
-# Rotation 90
+# Rotation 90°
 
 **Formula**
 
@@ -452,7 +452,7 @@ R(-90°) = [0., 1.],
 
 `v' = [2.0, -1.0]`
 
-# Rotation  180
+# Rotation  180°
 
 **Formula:**
 
@@ -479,6 +479,10 @@ R(180°) = [-1., 0.],
 `y' = -8.0`
 
 `v' = [-8.0, -8.0]`
+
+# Rotation  270°
+
+`A 270-degree rotation is equivalent to a 90-degree rotation, and for a 360-degree rotation, the x and y coordinates remain unchanged.`
 
 ---
 
