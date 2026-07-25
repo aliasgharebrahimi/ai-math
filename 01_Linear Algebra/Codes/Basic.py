@@ -295,7 +295,7 @@ class BasicCodes:
         ,device = self.device,
         dtype = self.dtype,
         requires_grad = self.requires_grad)
-        self.v1 = torch.unsqueeze(self.v, dim=1)
+        #self.v1 = torch.unsqueeze(self.v, dim=1)
 
         self.r = torch.tensor(
             [
@@ -315,11 +315,33 @@ class BasicCodes:
         dtype = self.dtype,
         requires_grad = self.requires_grad)
 
-        self.ro = torch.matmul(self.r, self.v1)
-        self.ro_ = torch.matmul(self.r_,self.v1)
+        self.ro = torch.matmul(self.r, self.v)
+        self.ro_ = torch.matmul(self.r_,self.v)
 
         return self.ro, self.ro_
 
+    def  ro180(self) -> Tuple[torch.Tensor, ...]:
+
+        self.v = torch.tensor(
+
+            [8.0, 8.0]
+
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.r = torch.tensor(
+            [
+                [-1., 0.],
+                [0., -1.]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.ro = torch.matmul(self.r, self.v)
+
+        return self.ro
 
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
