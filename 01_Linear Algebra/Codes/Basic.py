@@ -286,6 +286,10 @@ class BasicCodes:
 
         return self.sca
 
+    def ro90(self) -> Tuple[torch.Tensor, ...]:
+
+
+
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
