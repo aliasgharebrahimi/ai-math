@@ -288,6 +288,38 @@ class BasicCodes:
 
     def ro90(self) -> Tuple[torch.Tensor, ...]:
 
+        self.v = torch.tensor(
+
+            [1.0, 2.0]
+
+        ,device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+        self.v1 = torch.unsqueeze(self.v, dim=1)
+
+        self.r = torch.tensor(
+            [
+                [0., 1.],
+                [-1., 0.]
+            ]
+        ,device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+
+        self.r_ = torch.tensor(
+            [
+                [0., -1.],
+                [1., 0.]
+            ]
+        ,device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+
+        self.ro = torch.matmul(self.r, self.v1)
+        self.ro_ = torch.matmul(self.r_,self.v1)
+
+        return self.ro, self.ro_
+
 
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
@@ -334,32 +366,39 @@ def main():
     angle = object_BasicCodes.angle()
     print(f"angle 2vector: {angle}")
 
-    # 4. gauss_equation
+    # 5. gauss_equation
     print(60 * "=")
     p, x = object_BasicCodes.gauss1()
-    print("[4] gauss:")
+    print("[5] gauss:")
     print(f" - matrix plugin:{p}")
     print(f" - x:{x[0]}, y:{x[1].detach()}")
 
-    # Reflection
+    # 6. Reflection
     print(60 * "=")
     m1, m2 = object_BasicCodes.reflection()
-    print("[5] Reflection:")
+    print("[6] Reflection:")
     print(f" - a Reflection x:{m1}")
     print(f" - a Reflection y:{m2}")
 
-    # Shear
+    # 7. Shear
     print(60 * "=")
     ms1, ms2 = object_BasicCodes.shear()
-    print("[6] Shear:")
+    print("[7] Shear:")
     print(f" - a Shear x:{ms1}")
     print(f" - a Shear y:{ms2}")
 
-    # Scaling
+    # 8. Scaling
     print(60 * "=")
     sca = object_BasicCodes.scaling()
-    print("[7] Scaling:")
+    print("[8] Scaling:")
     print(f" - a Scaling vector: {sca}")
+
+    # Rotation 90
+    print(60 * "=")
+    ro, ro_ = object_BasicCodes.ro90()
+    print("[9] Rotation:")
+    print(f"- a Rotation 90:{ro}")
+    print(f"- a Rotation -90:{ro_}")
 
 if __name__ == "__main__":
 
