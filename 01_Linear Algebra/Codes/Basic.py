@@ -1,6 +1,9 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
+from pip._internal.utils import retry
+from sympy import print_tree
+from torchvision.transforms import v2
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -340,6 +343,26 @@ class BasicCodes:
 
         return self.ro
 
+    def dot(self) -> Tuple[torch.Tensor, ...]:
+
+        self.v = torch.tensor(
+
+            [6., 7.]
+
+            , device=self.device,
+            dtype=self.dtype,
+            requires_grad=self.requires_grad)
+        self.v2 = torch.tensor(
+
+            [1., 9.]
+
+            , device=self.device,
+            dtype=self.dtype,
+            requires_grad=self.requires_grad)
+
+        self.dot = torch.dot(self.v, self.v2)
+
+        return self.dot
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -424,6 +447,12 @@ def main():
     ro2 = object_BasicCodes.ro180()
     print("[10] Rotation 180:")
     print(f" - a Rotation 180:{ro2}")
+
+    # Dot Product
+    print(60 * "=")
+    dot = object_BasicCodes.dot()
+    print("[11] Dot Product:")
+    print(f" - a Dot Product: {dot}")
 
 if __name__ == "__main__":
 
