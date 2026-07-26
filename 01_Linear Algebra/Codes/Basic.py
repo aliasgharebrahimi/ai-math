@@ -1,9 +1,7 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
-from pip._internal.utils import retry
-from sympy import print_tree
-from torchvision.transforms import v2
+from numpy.testing import print_coercion_tables
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -371,6 +369,7 @@ def main():
     print("="*50)
     print("PYTORCH BASIC CONCEPTS DEMONSTRATION")
     print(f"PyTorch Version: {version}")
+    print(f"System device: {device}")
     print("="*50)
 
     # 1. نمایش تنسورها
