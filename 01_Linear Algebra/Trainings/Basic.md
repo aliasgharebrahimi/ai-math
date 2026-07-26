@@ -484,7 +484,19 @@ R(180°) = [-1., 0.],
 
 `A 270-degree rotation is equivalent to a 90-degree rotation, and for a 360-degree rotation, the x and y coordinates remain unchanged.`
 
+# Dot Product
 
+**Formula:**
+
+`a · b = a₁b₁ + a₂b₂ + a₃b₃ + ...`
+
+**Example:**
+
+`v = [6.,7.]`
+
+`v2 = [1., 9.]`
+
+`z = (6 . 1 = 6) + (7 . 9 = 63) = 69`
 
 ---
 
