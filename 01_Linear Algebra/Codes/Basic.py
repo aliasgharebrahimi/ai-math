@@ -361,7 +361,6 @@ class BasicCodes:
 
         return self.dot
 
-
     def matmul(self) -> torch.Tensor:
 
         self.mt1 = torch.tensor(
@@ -387,6 +386,7 @@ class BasicCodes:
         self.matmul_res = torch.matmul(self.mt1, self.mt2)
 
         return self.matmul_res
+
 
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
