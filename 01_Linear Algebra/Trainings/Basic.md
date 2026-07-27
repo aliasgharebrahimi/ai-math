@@ -597,6 +597,10 @@ m
 
 `With this set of vectors, only a single line can be accessed; therefore, our span is a line.`
 
+# Linearly Independent	
+
+
+
 ---
 
 ## 💡 Important Notes
