@@ -511,14 +511,20 @@ A = [1., 9., 3.],
     [4., 4., 3.],
     [7., 7., 0.]
 
-B = [4., 9.],
-    [1., 2.],
-    [9., 6.]
+B = [4., 9., 2.],
+    [1., 2., 3.],
+    [9., 6., 1.]
 ```
 
 `q = A . B`
 
-`q = 1 . 4 + 9 . 1`
+`q = 1 . 4 + 9 . 1 + 3 . 9 ...`
+
+```
+q = [40. 45. 32.]
+     [47. 62. 23.]
+     [35. 77. 35.]
+```
 
 ---
 
@@ -534,4 +540,4 @@ B = [4., 9.],
 
 ---
 
-### 🤖 Alright, now that we understand what linear algebra is and where it's used, let's dive into the code and see it in action.
+### 🤖 Alright, now that we understand08 what linear algebra is and where it's used, let's dive into the code and see it in action.
