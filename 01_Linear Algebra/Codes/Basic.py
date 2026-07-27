@@ -219,7 +219,7 @@ class BasicCodes:
         dtype=self.dtype,
         requires_grad=self.requires_grad)
 
-        self.matmul = torch.matmul(self.rx, self.v)
+        self.matmul1 = torch.matmul(self.rx, self.v)
         self.matmul2 = torch.matmul(self.ry, self.v)
 
         return self.matmul, self.matmul2
@@ -363,30 +363,33 @@ class BasicCodes:
 
         return self.dot
 
-    def matmul(self) -> Tuple[torch.Tensor, ...]:
+
+    def matmul(self) -> torch.Tensor:
 
         self.mt1 = torch.tensor(
-            [
-                [1., 9., 3.],
-                [4., 4., 3.],
-                [7., 7., 0.]
-            ]
+          [
+            [1., 9., 3.],
+            [4., 4., 3.],
+            [7., 7., 0.]
+        ]
         , device=self.device,
         dtype=self.dtype,
         requires_grad=self.requires_grad)
+
         self.mt2 = torch.tensor(
-            [
-                [4., 9., 2.],
-                [1., 2., 3.],
-                [9., 6., 1.]
-            ]
+        [
+            [4., 9., 2.],
+            [1., 2., 3.],
+            [9., 6., 1.]
+        ]
         , device=self.device,
         dtype=self.dtype,
         requires_grad=self.requires_grad)
 
-        self.matmul_matrix = torch.matmul(self.mt1, self.mt2)
+        self.matmul_res = torch.matmul(self.mt1, self.mt2)
 
-        return self.matmul_matrix
+        return self.matmul_res
+
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -475,16 +478,17 @@ def main():
 
     # Dot Product
     print(60 * "=")
-    dot = object_BasicCodes.dot()
+    dot_product = object_BasicCodes.dot()
     print("[11] Dot Product:")
-    print(f" - a Dot Product: {dot}")
+    print(f" - a Dot Product: {dot_product}")
 
     # matmul matrix
     print(60 * "=")
-    matmul = object_BasicCodes.matmul()
-    print(f"[12] Matmul Matrix: {matmul}")
+    matmul_matrix = object_BasicCodes.matmul()
+    print(f"[12] Matmul Matrix: {matmul_matrix}")
 
 
 if __name__ == "__main__":
 
     main()
+
