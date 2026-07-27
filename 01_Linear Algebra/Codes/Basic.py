@@ -2,7 +2,7 @@ import torch
 from typing import Tuple
 import torch.nn.functional as F
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "CUDA" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
 
 class BasicCodes:
@@ -79,9 +79,9 @@ class BasicCodes:
             dtype=self.dtype, 
             requires_grad=self.requires_grad)
         
-        self.norm1 = torch.linalg.norm(self.vector_norm, ord=1) # tensor(10., grad_fn=<LinalgVectorNormBackward0>)
-        self.norm2 = torch.linalg.norm(self.vector_norm, ord=2)  # tensor(9.0554, grad_fn=<LinalgVectorNormBackward0>)
-        self.normb = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9., grad_fn=<LinalgVectorNormBackward0>)
+        self.norm1 = torch.linalg.norm(self.vector_norm, ord=1) # tensor(10.)
+        self.norm2 = torch.linalg.norm(self.vector_norm, ord=2)  # tensor(9.0554)
+        self.norminf = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9.)
 
         return self.norm1, self.norm2, self.normb
 
