@@ -2,6 +2,7 @@ import torch
 from typing import Tuple
 import torch.nn.functional as F
 from numpy.testing import print_coercion_tables
+from torch._dynamo import side_effects
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -362,6 +363,31 @@ class BasicCodes:
 
         return self.dot
 
+    def matmul(self) -> Tuple[torch.Tensor, ...]:
+
+        self.mt1 = torch.tensor(
+            [
+                [1., 9., 3.],
+                [4., 4., 3.],
+                [7., 7., 0.]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+        self.mt2 = torch.tensor(
+            [
+                [4., 9., 2.],
+                [1., 2., 3.],
+                [9., 6., 1.]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.matmul_matrix = torch.matmul(self.mt1, self.mt2)
+
+        return self.matmul_matrix
+
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -452,6 +478,12 @@ def main():
     dot = object_BasicCodes.dot()
     print("[11] Dot Product:")
     print(f" - a Dot Product: {dot}")
+
+    # matmul matrix
+    print(60 * "=")
+    matmul = object_BasicCodes.matmul()
+    print(f"[12] Matmul Matrix: {matmul}")
+
 
 if __name__ == "__main__":
 
