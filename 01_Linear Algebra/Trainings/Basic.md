@@ -547,6 +547,56 @@ q = [40. 45. 32.]
 
 `w = [14.0, 68.0]`
 
+# Span
+
+**Formula:**
+
+`Span(v 
+1
+​
+ ,v 
+2
+​
+ ,…,v 
+m
+​
+ )={c 
+1
+​
+ v 
+1
+​
+ +c 
+2
+​
+ v 
+2
+​
+ +⋯+c 
+m
+​
+ v 
+m
+​
+ ∣c 
+1
+​
+ ,c 
+2
+​
+ ,…,c 
+m
+​
+ ∈R`
+
+**Example:**
+
+`We use the linear combination we performed in the previous section!`
+
+`w = [14., 68.]`
+
+`With this set of vectors, only a single line can be accessed; therefore, our span is a line.`
+
 ---
 
 ## 💡 Important Notes

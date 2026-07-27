@@ -422,7 +422,6 @@ class BasicCodes:
 
         return w
 
-
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
