@@ -1,8 +1,6 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
-from numpy.testing import print_coercion_tables
-from torch._dynamo import side_effects
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
