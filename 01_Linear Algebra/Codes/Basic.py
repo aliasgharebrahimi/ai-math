@@ -1,6 +1,7 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
+from torchvision.transforms import v2
 
 device = "CUDA" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -81,7 +82,7 @@ class BasicCodes:
         
         self.norm1 = torch.linalg.norm(self.vector_norm, ord=1) # tensor(10.)
         self.norm2 = torch.linalg.norm(self.vector_norm, ord=2)  # tensor(9.0554)
-        self.norminf = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9.)
+        self.normb = torch.linalg.norm(self.vector_norm, ord=float("inf"))  # tensor(9.)
 
         return self.norm1, self.norm2, self.normb
 
@@ -387,6 +388,39 @@ class BasicCodes:
 
         return self.matmul_res
 
+    def lico(self) -> torch.Tensor:
+
+        self.c1 = torch.tensor(
+            6.0
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.c2 = torch.tensor(
+            2.0
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.v1 = torch.tensor(
+
+            [1.0, 9.0]
+
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.v2 = torch.tensor(
+
+            [4.0, 7.0]
+
+        , device = self.device,
+        dtype = self.dtype,
+        requires_grad = self.requires_grad)
+
+        w = self.c1 * self.v1 + self.c2 * self.v2
+
+        return w
 
 
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
@@ -484,6 +518,11 @@ def main():
     print(60 * "=")
     matmul_matrix = object_BasicCodes.matmul()
     print(f"[12] Matmul Matrix: {matmul_matrix}")
+
+    # Linear combination
+    print(60 * "=")
+    w = object_BasicCodes.lico()
+    print(f"[13] Linear combination {w}")
 
 
 if __name__ == "__main__":
