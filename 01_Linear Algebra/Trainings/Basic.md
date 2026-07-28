@@ -630,7 +630,7 @@ For this formula, we must determine the coefficients using a system of equations
 
 **Example:**
 
-Linearly dependent set of vectors:
+Linearly Independent set of vectors:
 
 `u₁ = [1.0, 6.0]`
 
@@ -661,6 +661,42 @@ Convert to augmented matrix:
 `c₁ = 0`
 
 `c₂ = 0`
+
+Linearly Dependent set of vectors:
+
+`u₁ = [1.0, 6.0]`
+
+`u₂ = [6.0, 36.0]`
+
+`c₁u₁ + c₂u₂ = [0, 0]`
+
+Solving the device using Gauss's method:
+
+Convert to augmented matrix:
+
+```
+[1 6  |0]
+[6 36 |0]
+```
+
+`6 / 1 = 6`
+
+`6 . [1, 6, 0] = [6, 36, 0]`
+
+`[6, 36, 0] - [6, 36, 0] = [0, 0, 0]`
+
+```
+[1 6 |0]
+[0 0 |0]
+```
+
+`c₁ . 0 + c₂ . 0 = 0`
+
+`c₂ = 0`
+
+`c₁ . 1 + c₂ . 6 = 0`
+
+`c₁ = 0`
 
 ---
 
