@@ -597,9 +597,48 @@ m
 
 `With this set of vectors, only a single line can be accessed; therefore, our span is a line.`
 
-# Linearly Independent	
+# Linearly Independent, Linearly Dependent
+
+**Formula:**
 
 
+For this formula, we must determine the coefficients using a system of equations; if even one of the coefficients is non-zero, the vector is dependent, whereas if all coefficients are zero, the vector is independent.
+
+`c1 * v1 + c2 * v2 + ... + cn * vn = 0`
+
+**Example:**
+
+Linearly dependent set of vectors:
+
+`u₁ = [1.0, 6.0]`
+
+`u₂ = [6.0, 12.0]`
+
+`c₁u₁ + c₂u₂ = [0, 0]`
+
+Solving the device using Gauss's method:
+
+Convert to augmented matrix:
+
+```
+[1 6 | 0],
+[6 12 |0]
+```
+
+`6 / 1 = 6`
+
+`6 . [1, 6, 0] = [6, 36, 0]`
+
+`[6, 36, |0] - [6, 12 |0] = [0, 24, |0]`
+
+```
+[1 6 |0],
+[0 24 |0]
+```
+
+`c₁ = 0`
+
+`c₂ = 0`
 
 ---
 
