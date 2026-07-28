@@ -181,7 +181,7 @@ The formula for obtaining it:
 
 `cos(theta) = (a . b) / (|a| * |b|)`
 
-#### Example:
+**Example**:
 
 `a = [8, 6, 1]`
 `b = [4, 3, 3]`
@@ -274,6 +274,8 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 `x = 4`
 `y = 1`
 
+---
+
 # Reflection
 
 `Rv`
@@ -311,6 +313,8 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 `z = R_x.v = [8., -9.]`
 
 `z2 = R_y.v = [-8., 9.]`
+
+---
 
 # Shear
 
@@ -364,6 +368,8 @@ Divide the element `a_i,j` (located below the main diagonal) by `a_p,j` (the ele
 `s = [1., 0.],
       [k, 1.]`
 
+---
+
 # Scaling
 
 **Formula:**
@@ -400,6 +406,8 @@ S = [sx, 0.]
 `y = 2.0`
 
 `v . s = [12., 2.0]`
+
+---
 
 # Rotation 90°
 
@@ -452,6 +460,8 @@ R(-90°) = [0., 1.],
 
 `v' = [2.0, -1.0]`
 
+---
+
 # Rotation  180°
 
 **Formula:**
@@ -480,9 +490,13 @@ R(180°) = [-1., 0.],
 
 `v' = [-8.0, -8.0]`
 
+---
+
 # Rotation  270°
 
 `A 270-degree rotation is equivalent to a 90-degree rotation, and for a 360-degree rotation, the x and y coordinates remain unchanged.`
+
+---
 
 # Dot Product
 
@@ -497,6 +511,8 @@ R(180°) = [-1., 0.],
 `v2 = [1., 9.]`
 
 `z = (6 . 1 = 6) + (7 . 9 = 63) = 69`
+
+---
 
 # Matrix multiplication
 
@@ -526,6 +542,8 @@ q = [40. 45. 32.]
      [35. 77. 35.]
 ```
 
+---
+
 # Linear combination
 
 **Formula:**
@@ -546,6 +564,8 @@ q = [40. 45. 32.]
 `w = (c₁ . v₁) + (c₂ . v₂) = [6.0, 54.0] + [8.0, 14.0]`
 
 `w = [14.0, 68.0]`
+
+---
 
 # Span
 
@@ -596,6 +616,8 @@ m
 `w = [14., 68.]`
 
 `With this set of vectors, only a single line can be accessed; therefore, our span is a line.`
+
+---
 
 # Linearly Independent, Linearly Dependent
 
