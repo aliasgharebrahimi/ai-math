@@ -1,7 +1,6 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
-from torchvision.transforms import v2
 
 device = "CUDA" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -422,6 +421,32 @@ class BasicCodes:
 
         return w
 
+    def span(self) -> torch.Tensor:
+
+        # Definition of a set of vectors
+        self.u1 = torch.tensor(
+
+            [1.0, 7.0]
+
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.u2 = torch.tensor(
+
+            [7.0, 12.0]
+
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        # Linear combination
+        self.w1 = self.u2 * 1 + self.u2 * 1
+        self.w2 = self.u1 * 1 + self.u2 * 0
+        self.w3 = self.u1 * 0 + self.u2 * 1
+
+        return self.w1, self.w2, self.w3
+
 object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -522,6 +547,11 @@ def main():
     print(60 * "=")
     w = object_BasicCodes.lico()
     print(f"[13] Linear combination {w}")
+
+    # Span
+    print(60 * "=")
+    w1, w2, w3 = object_BasicCodes.span()
+    print(f"[14] All accessible points {w1}, {w2}, {w3} So The span of this vector is R².")
 
 
 if __name__ == "__main__":

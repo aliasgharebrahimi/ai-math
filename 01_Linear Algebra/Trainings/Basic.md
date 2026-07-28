@@ -694,8 +694,6 @@ Convert to augmented matrix:
 
 `c₂ = -6`
 
-
-
 ---
 
 ## 💡 Important Notes
