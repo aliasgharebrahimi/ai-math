@@ -743,6 +743,16 @@ A ^ T = [6.0, 2.0, 7.0]
         [3.0, 2.0, 3.0]
 ```
 
+# Identity matrix
+
+**Example:**
+
+```
+I₃ = [1 0 0]
+     [0 1 0]
+     [0 0 1]
+```
+
 ---
 
 ## 💡 Important Notes
@@ -757,4 +767,4 @@ A ^ T = [6.0, 2.0, 7.0]
 
 ---
 
-### 🤖 Alright, now that we understand08 what linear algebra is and where it's used, let's dive into the code and see it in action.
+### 🤖 jnn Alright, now that we understand08 what linear algebra is and where it's used, let's dive into the code and see it in action.
