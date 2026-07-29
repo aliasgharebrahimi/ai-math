@@ -1,6 +1,7 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
+from sympy.matrices.expressions import transpose
 
 device = "CUDA" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
@@ -483,6 +484,22 @@ class BasicCodes:
 
         return self.zero_matrix
 
+    def transpose(self) -> torch.Tensor:
+
+        self.A = torch.tensor(
+            [
+                [6.0, 3.0],
+                [2.0, 2.0],
+                [7.0, 3.0]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.A_T = torch.t(self.A)
+
+        return self.A_T
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -598,6 +615,11 @@ def main():
     print(60 * "=")
     zero_matrix = BasicCodes.zero()
     print(f"[16] Zero Matrix: {zero_matrix}")
+
+    # transpose
+    print(60 * "=")
+    transpose = BasicCodes.transpose()
+    print(f"[17] Transpose A: {transpose}")
 
 if __name__ == "__main__":
 
