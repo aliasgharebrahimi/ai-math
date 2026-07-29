@@ -683,6 +683,38 @@ Constructing an augmented matrix:
 
 So, our set is independent.
 
+# Base
+
+**Formula:**
+
+`span(B) = V ∧ LI(B)`
+
+- In other words, it must be a set of vectors such that their span is the entire space and the set is linearly independent.
+
+**Steps to understand it:**
+
+- 1- First, let's obtain its span and compare it with the entire space.
+
+- 2- We will review the collection after independence.
+
+**Example:**
+
+Vectors:
+
+`v1 = [4.0, 5.0]`
+
+`v2 = [4.0, 0.0]`
+
+Span = 2
+
+Space = 2
+
+Span = Space 
+
+Independence of the set = True
+
+So, this is the base set.
+
 ---
 
 ## 💡 Important Notes
