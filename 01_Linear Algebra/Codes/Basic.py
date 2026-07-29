@@ -477,6 +477,12 @@ class BasicCodes:
 
         return self.solv
 
+    def zero(self) -> torch.Tensor:
+
+        self.zero_matrix = torch.zeros(2, 2)
+
+        return self.zero_matrix
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -587,6 +593,11 @@ def main():
     print(60 * "=")
     c1, c2 = BasicCodes.inde()
     print(f"[15] Coefficients c1: {c1}, c2: {c2} So  Vectors Linearly Independent")
+
+    # Zero Matrix
+    print(60 * "=")
+    zero_matrix = BasicCodes.zero()
+    print(f"[16] Zero Matrix: {zero_matrix}")
 
 if __name__ == "__main__":
 
