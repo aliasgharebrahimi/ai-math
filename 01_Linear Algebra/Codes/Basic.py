@@ -160,7 +160,7 @@ class BasicCodes:
 
         return self.angle_in_degrees
     
-    def gauss1(self) ->Tuple[torch.Tensor, ...]:
+    def gauss(self) ->Tuple[torch.Tensor, ...]:
 
         # Constructing an augmented matrix
         self.a = torch.tensor(
@@ -183,9 +183,9 @@ class BasicCodes:
         self.x = torch.cat([self.a, self.z], dim=1)
 
         # Solving by Gauss's method
-        self.gauss = torch.linalg.solve(self.a, self.z)
+        self.gauss1 = torch.linalg.solve(self.a, self.z)
 
-        return self.x, self.gauss
+        return self.x, self.gauss1
 
     def reflection(self) -> Tuple[torch.Tensor, ...]:
 
@@ -447,7 +447,7 @@ class BasicCodes:
 
         return self.w1, self.w2, self.w3
 
-object_BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
+BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
 
@@ -460,7 +460,7 @@ def main():
     # 1. نمایش تنسورها
     print(60*"=")
     print("[1] Tensors & Structures:")
-    s, rv, cv, m, t3 = object_BasicCodes.tensors()
+    s, rv, cv, m, t3 = BasicCodes.tensors()
     print(f" - Scalar:    {s} | Shape: {s.shape}")
     print(f" - Row Vector: {rv} | Shape: {rv.shape}")
     print(f" - Col Vector: {cv} | Shape: {cv.shape}")
@@ -472,7 +472,7 @@ def main():
     # 2. نمایش نرم‌ها
     print(60 * "=")
     print("[2] Norm Calculations:")
-    n1, n2, nb = object_BasicCodes.norm()
+    n1, n2, nb = BasicCodes.norm()
     print(f" - L1 Norm:    {n1.item():.4f}")
     print(f" - L2 Norm:    {n2.item():.4f}")
     print(f" - L-inf Norm: {nb.item():.4f}")
@@ -480,8 +480,8 @@ def main():
     # 3. نمایش بردار واحد
     print(60 * "=")
     print("[3] Unit Vector Check:")
-    q, q2, is_u, is_not_u, c = object_BasicCodes.unit_vector()
-    a = object_BasicCodes.on_unit_vector
+    q, q2, is_u, is_not_u, c = BasicCodes.unit_vector()
+    a = BasicCodes.on_unit_vector
     print(f" - Vector u norm: {q.item():.2f} | Is Unit? {is_u.item()}")
     print(f" - Vector v norm: {q2.item():.2f} | Is Unit? {is_not_u.item()}")
     print(f" - vector {a} unit: {c}")
@@ -489,68 +489,68 @@ def main():
     # 4. angle 2vector
     print(60 * "=")
     print("[4] angle 2vector:")
-    angle = object_BasicCodes.angle()
+    angle = BasicCodes.angle()
     print(f"angle 2vector: {angle}")
 
     # 5. gauss_equation
     print(60 * "=")
-    p, x = object_BasicCodes.gauss1()
+    p, x = BasicCodes.gauss()
     print("[5] gauss:")
     print(f" - matrix plugin:{p}")
     print(f" - x:{x[0]}, y:{x[1].detach()}")
 
     # 6. Reflection
     print(60 * "=")
-    m1, m2 = object_BasicCodes.reflection()
+    m1, m2 = BasicCodes.reflection()
     print("[6] Reflection:")
     print(f" - a Reflection x:{m1}")
     print(f" - a Reflection y:{m2}")
 
     # 7. Shear
     print(60 * "=")
-    ms1, ms2 = object_BasicCodes.shear()
+    ms1, ms2 = BasicCodes.shear()
     print("[7] Shear:")
     print(f" - a Shear x:{ms1}")
     print(f" - a Shear y:{ms2}")
 
     # 8. Scaling
     print(60 * "=")
-    sca = object_BasicCodes.scaling()
+    sca = BasicCodes.scaling()
     print("[8] Scaling:")
     print(f" - a Scaling vector: {sca}")
 
     # Rotation 90
     print(60 * "=")
-    ro, ro_ = object_BasicCodes.ro90()
+    ro, ro_ = BasicCodes.ro90()
     print("[9] Rotation 90:")
     print(f" - a Rotation 90:{ro}")
     print(f" - a Rotation -90:{ro_}")
 
     # Rotation 180
     print(60 * "=")
-    ro2 = object_BasicCodes.ro180()
+    ro2 = BasicCodes.ro180()
     print("[10] Rotation 180:")
     print(f" - a Rotation 180:{ro2}")
 
     # Dot Product
     print(60 * "=")
-    dot_product = object_BasicCodes.dot()
+    dot_product = BasicCodes.dot()
     print("[11] Dot Product:")
     print(f" - a Dot Product: {dot_product}")
 
     # matmul matrix
     print(60 * "=")
-    matmul_matrix = object_BasicCodes.matmul()
+    matmul_matrix = BasicCodes.matmul()
     print(f"[12] Matmul Matrix: {matmul_matrix}")
 
     # Linear combination
     print(60 * "=")
-    w = object_BasicCodes.lico()
+    w = BasicCodes.lico()
     print(f"[13] Linear combination {w}")
 
     # Span
     print(60 * "=")
-    w1, w2, w3 = object_BasicCodes.span()
+    w1, w2, w3 = BasicCodes.span()
     print(f"[14] All accessible points {w1}, {w2}, {w3} So The span of this vector is R².")
 
 
