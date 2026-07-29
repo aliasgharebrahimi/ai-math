@@ -715,6 +715,15 @@ Independence of the set = True
 
 So, this is the base set.
 
+# Zero Matrix
+
+**Example:**
+
+```
+[0, 0],
+[0, 0]
+```
+
 ---
 
 ## 💡 Important Notes
