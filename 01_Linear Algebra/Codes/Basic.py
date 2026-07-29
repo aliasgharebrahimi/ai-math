@@ -445,6 +445,38 @@ class BasicCodes:
 
         return self.rank
 
+    def inde(self) -> torch.Tensor:
+
+        self.u1 = torch.tensor(
+
+            [8.0, 8.0]
+
+            , device=self.device,
+            dtype=self.dtype,
+            requires_grad=self.requires_grad)
+
+        self.u2 = torch.tensor(
+
+            [1.0, 3.0]
+
+            , device=self.device,
+            dtype=self.dtype,
+            requires_grad=self.requires_grad)
+
+        self.mtag = torch.stack([self.u1, self.u2], dim=0)
+        self.ja = torch.tensor(
+            [
+                [0.0],
+                [0.0]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.solv = torch.linalg.solve(self.mtag, self.ja)
+
+        return self.solv
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -550,6 +582,11 @@ def main():
     print(60 * "=")
     span = BasicCodes.span()
     print(f"[14] Rank: {span} span set:{span}")
+
+    # Linearly Independent, Linearly Dependent
+    print(60 * "=")
+    c1, c2 = BasicCodes.inde()
+    print(f"[15] Coefficients c1: {c1}, c2: {c2} So  Vectors Linearly Independent")
 
 if __name__ == "__main__":
 
