@@ -645,80 +645,43 @@ So, the span of this system is 2.
 
 # Linearly Independent, Linearly Dependent
 
-**Formula:**
+Formula for determining whether a vector is independent or dependent:
 
-
-For this formula, we must determine the coefficients using a system of equations; if even one of the coefficients is non-zero, the vector is dependent, whereas if all coefficients are zero, the vector is independent.
-
-`c1 * v1 + c2 * v2 + ... + cn * vn = 0`
+`c1v1 + c2v2 + ... = 0`
 
 **Example:**
 
-Linearly Independent set of vectors:
+Vector set:
 
-`u₁ = [1.0, 6.0]`
+`v1 = [8.0, 8.0]`
 
-`u₂ = [6.0, 12.0]`
+`v2 = [1.0, 3.0]`
 
-`c₁u₁ + c₂u₂ = [0, 0]`
+Finding coefficients using Gaussian elimination
 
-Solving the device using Gauss's method:
-
-Convert to augmented matrix:
+Constructing an augmented matrix:
 
 ```
-[1 6 | 0],
-[6 12 |0]
+[8.0 1.0 | 0]
+[8.0 3.0 | 0]
 ```
 
-`6 / 1 = 6`
+`8.0 / 8.0 = 1.0`
 
-`6 . [1, 6, 0] = [6, 36, 0]`
+`1.0 . [8.0, 1.0, 0.0] = [8.0, 1.0, 0.0]`
 
-`[6, 36, |0] - [6, 12 |0] = [0, 24, |0]`
-
-```
-[1 6 |0],
-[0 24 |0]
-```
-
-`c₁ = 0`
-
-`c₂ = 0`
-
-Linearly Dependent set of vectors:
-
-`u₁ = [1.0, 6.0]`
-
-`u₂ = [6.0, 36.0]`
-
-`c₁u₁ + c₂u₂ = [0, 0]`
-
-Solving the device using Gauss's method:
-
-Convert to augmented matrix:
+`[8.0, 1.0, 0.0] - [8.0, 3.0, 0.0] = [0.0, -2.0, 0.0]`
 
 ```
-[1 6  |0]
-[6 36 |0]
+[8.0  1.0 | 0]
+[0.0 -2.0 | 0]
 ```
 
-`6 / 1 = 6`
+`c2 = 0`
 
-`6 . [1, 6, 0] = [6, 36, 0]`
+`c1 = 0`
 
-`[6, 36, 0] - [6, 36, 0] = [0, 0, 0]`
-
-```
-[1 6 |0]
-[0 0 |0]
-```
-
-`c₁ = 0`
-
-`c₂ = -6`
-
-
+So, our set is independent.
 
 ---
 
