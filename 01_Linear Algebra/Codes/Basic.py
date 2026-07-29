@@ -500,6 +500,12 @@ class BasicCodes:
 
         return self.A_T
 
+    def identity_matrix(self) -> torch.Tensor:
+
+        self.identity_matrix = torch.eye(3)
+
+        return self.identity_matrix
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -620,6 +626,11 @@ def main():
     print(60 * "=")
     transpose = BasicCodes.transpose()
     print(f"[17] Transpose A: {transpose}")
+
+    # Identity matrix
+    print(60 * "=")
+    iodentity_matrix = BasicCodes.identity_matrix()
+    print(f"[18] Identity matrix: {iodentity_matrix}")
 
 if __name__ == "__main__":
 
