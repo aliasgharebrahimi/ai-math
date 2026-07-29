@@ -439,13 +439,11 @@ class BasicCodes:
         , device=self.device,
         dtype=self.dtype,
         requires_grad=self.requires_grad)
+        self.matra = torch.stack([self.u1, self.u2])
 
-        # Linear combination
-        self.w1 = self.u2 * 1 + self.u2 * 1
-        self.w2 = self.u1 * 1 + self.u2 * 0
-        self.w3 = self.u1 * 0 + self.u2 * 1
+        self.rank = torch.linalg.matrix_rank(self.matra)
 
-        return self.w1, self.w2, self.w3
+        return self.rank
 
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
@@ -550,8 +548,8 @@ def main():
 
     # Span
     print(60 * "=")
-    w1, w2, w3 = BasicCodes.span()
-    print(f"[14] All accessible points {w1}, {w2}, {w3} So The span of this vector is R².")
+    span = BasicCodes.span()
+    print(f"[14] Rank: {span} span set:{span}")
 
 if __name__ == "__main__":
 
