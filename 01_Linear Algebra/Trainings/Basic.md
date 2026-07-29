@@ -579,9 +579,9 @@ q = [40. 45. 32.]
 
 - 1 - Conversion to matrix
 
-- 2 - Conversion to row-echelon form
+- 2 - Gaussian Elimination to reach Row-Echelon Form
 
-- 3 - Counting the number of active rows and determining the span.
+- 3 - Counting the number of non-zero row and determining the span.
 
 **Example:**
 
@@ -601,7 +601,7 @@ Conversion to matrix:
 [8.0, 9.0]
 ```
 
-Conversion to row-echelon form:
+Gaussian Elimination to reach Row-Echelon Form:
 
 `4.0 / 4.0 = 1`
 
@@ -639,7 +639,7 @@ Conversion to row-echelon form:
 [0.0, 0.0]
 ```
 
-So, the spin of this system is 2.
+So, the span of this system is 2.
 
 ---
 
