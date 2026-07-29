@@ -724,6 +724,25 @@ So, this is the base set.
 [0, 0]
 ```
 
+# Matrix Transpose	
+
+**Formula:**
+
+(A ^ T){ji} = A{ij}
+
+**Example:**
+
+```
+A = [6.0, 3.0],
+    [2.0, 2.0],
+    [7.0, 3.0]
+```
+
+```
+A ^ T = [6.0, 2.0, 7.0]
+        [3.0, 2.0, 3.0]
+```
+
 ---
 
 ## 💡 Important Notes
