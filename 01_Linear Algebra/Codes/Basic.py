@@ -553,7 +553,6 @@ def main():
     w1, w2, w3 = BasicCodes.span()
     print(f"[14] All accessible points {w1}, {w2}, {w3} So The span of this vector is R².")
 
-
 if __name__ == "__main__":
 
     main()

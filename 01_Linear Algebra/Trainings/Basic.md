@@ -569,53 +569,77 @@ q = [40. 45. 32.]
 
 # Span
 
-**Formula:**
+**Formulas:**
 
-`Span(v 
-1
-​
- ,v 
-2
-​
- ,…,v 
-m
-​
- )={c 
-1
-​
- v 
-1
-​
- +c 
-2
-​
- v 
-2
-​
- +⋯+c 
-m
-​
- v 
-m
-​
- ∣c 
-1
-​
- ,c 
-2
-​
- ,…,c 
-m
-​
- ∈R`
+ - To determine the span, we must consider the number of independent vectors in a set.
+---
+ - The best way to determine the number of independent vectors is to use the rank method.
+
+**Stages:**
+
+- 1 - Conversion to matrix
+
+- 2 - Conversion to row-echelon form
+
+- 3 - Counting the number of active rows and determining the span.
 
 **Example:**
 
-`We use the linear combination we performed in the previous section!`
+Vectors:
 
-`w = [14., 68.]`
+`v1 = [4.0, 5.0]`
 
-`With this set of vectors, only a single line can be accessed; therefore, our span is a line.`
+`v2 = [4.0, 0.0]`
+
+`v3 = [8.0, 9.0]`
+
+Conversion to matrix:
+
+```
+[4.0, 5.0]
+[4.0, 0.0]
+[8.0, 9.0]
+```
+
+Conversion to row-echelon form:
+
+`4.0 / 4.0 = 1`
+
+`1 . [4.0, 5.0] = [4.0, 5.0]`
+
+`[4.0, 5.0] - [4.0, 0.0] = [0.0, 5.0]`
+
+```
+[4.0, 5.0]
+[0.0, 5.0]
+[8.0, 9.0]
+```
+
+`8.0 / 4.0 = 2.0`
+
+`2.0 . [4.0, 5.0] = [8.0, 10.0]`
+
+`[8.0, 9.0] - [8.0, 10.0] = [0.0, -1.0]`
+
+```
+[4.0,  5.0]
+[0.0,  5.0]
+[0.0, -1.0]
+```
+
+`-1.0 / 5.0  = -0.2`
+
+`-0.2 . [0.0,  5.0] = [0.0, -1.0]`
+
+`[0.0, -1.0] - [0.0, -1.0] = [0.0, 0.0]`
+
+```
+[4.0, 5.0]
+[0.0, 5.0]
+[0.0, 0.0]
+```
+
+So, the spin of this system is 2.
 
 ---
 
