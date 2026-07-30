@@ -532,6 +532,21 @@ class BasicCodes:
 
         return self.det_A1, self.det_A2
 
+    def matrix_inversion(self) -> torch.Tensor:
+
+        self.A = torch.tensor(
+            [
+                [4, 7],
+                [2, 6]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.inv = torch.linalg.inv(self.A)
+
+        return self.inv
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -662,6 +677,11 @@ def main():
     print(60 * "=")
     det_A1, det_A2 = BasicCodes.determinant()
     print(f"[19] Determinant: A1: {det_A1}, A2: {det_A2}")
+
+    # Matrix Inversion
+    print(60 * "=")
+    inv = BasicCodes.matrix_inversion()
+    print(f"[20] Matrix Inversion A: {inv}")
 
 if __name__ == "__main__":
 
