@@ -506,6 +506,32 @@ class BasicCodes:
 
         return self.identity_matrix
 
+    def determinant(self) -> Tuple[torch.Tensor, ...]:
+
+        self.A1 = torch.tensor(
+            [
+                [9, 12],
+                [2,  4]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.A2 = torch.tensor(
+            [
+                [2, 3, 0],
+                [1, 9, 1],
+                [7, 0, 1]
+            ]
+        , device=self.device,
+        dtype=self.dtype,
+        requires_grad=self.requires_grad)
+
+        self.det_A1 = torch.linalg.det(self.A1)
+        self.det_A2 = torch.linalg.det(self.A2)
+
+        return self.det_A1, self.det_A2
+
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 def main():
@@ -631,6 +657,11 @@ def main():
     print(60 * "=")
     iodentity_matrix = BasicCodes.identity_matrix()
     print(f"[18] Identity matrix: {iodentity_matrix}")
+
+    # Determinant
+    print(60 * "=")
+    det_A1, det_A2 = BasicCodes.determinant()
+    print(f"[19] Determinant: A1: {det_A1}, A2: {det_A2}")
 
 if __name__ == "__main__":
 
