@@ -753,6 +753,50 @@ I₃ = [1 0 0]
      [0 0 1]
 ```
 
+# Determinant 
+
+**Formula:**
+
+Determinant for a 2 by 2 matrix:
+
+```
+A = [[a, b],
+     [c, d]]
+```
+
+`det(A) = a×d - b×c`
+
+**Example:**
+
+```
+A = [[9, 12],
+     [2,  4]]
+```
+
+`det(A) = (9 . 4) - (12 . 2)`
+
+`det(A) = 12`
+
+Determinant for a 3 by 3 matrix:
+
+```
+A = [[a, b, c],
+     [d, e, f],
+     [g, h, i]]
+```
+
+`det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)`
+
+**Example:**
+
+```
+A = [[2, 3, 0],
+     [1, 9, 1],
+     [7, 0, 1]]
+```
+
+`det(A) = 36`
+
 ---
 
 ## 💡 Important Notes
