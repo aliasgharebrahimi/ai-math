@@ -797,6 +797,43 @@ A = [[2, 3, 0],
 
 `det(A) = 36`
 
+# Matrix Inversion
+
+**Formulas:**
+
+Determinant for a 2 by 2 matrix:
+ 
+```
+A = [a, b]
+    [c, d]
+```
+
+**Inverse of a 2x2 Matrix Formula:**
+
+```
+A^-1 = (1 / (ad - bc)) * [d, -b]
+                         [-c, a]
+```
+
+**Example:**
+
+```
+A = [4 7]
+    [2 6]
+```
+
+```
+A^-1 = [0.6 -0.7]
+        [-0.2 0.4]
+```
+
+Test:
+
+```
+A × A ^ -1 = [1 0]
+             [0 1]
+```
+
 ---
 
 ## 💡 Important Notes
