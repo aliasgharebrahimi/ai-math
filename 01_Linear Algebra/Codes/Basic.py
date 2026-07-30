@@ -1,7 +1,6 @@
 import torch
 from typing import Tuple
 import torch.nn.functional as F
-from sympy.matrices.expressions import transpose
 
 device = "CUDA" if torch.cuda.is_available() else "cpu"
 version = torch.__version__
