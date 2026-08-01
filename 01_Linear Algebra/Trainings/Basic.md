@@ -65,6 +65,10 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 
 `c = 6.2`
 
+photo in space:
+
+<img src="../Project%20Photos/Photo%20in%20space/scalar.jpg">
+
 ---
 
 # Vector:
@@ -74,6 +78,10 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 #### Example:
 
 `v = [6.2, 5.3, 8.6]`
+
+photo in space:
+
+<img src="../Project%20Photos/Photo%20in%20space/Vector.jpg">
 
 ---
 
@@ -102,6 +110,10 @@ As previously mentioned, the language of artificial intelligence is linear algeb
 `B = [2., 1., 6.],`  
 `    [8., 9., 4.],`  
 `    [7., 1., 6.]`
+
+photo in space:
+
+<img src="../Project%20Photos/Photo%20in%20space/Matrix.jpg">
 
 ---
 
