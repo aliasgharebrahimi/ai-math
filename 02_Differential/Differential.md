@@ -57,3 +57,8 @@ In the expression $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\par
 | $, \dots,$ |   In other words, we can include any number of partial derivatives.                 |
 
 ### 🧠 Application in Deep Learning
+
+This gradient constitutes a core component of deep learning; without it, the training process would become highly unstable.
+
+*   **The Chain Rule** Using the gradient vector, the multiplication associated with the chain rule can be performed.
+*   **Backpropagation:** We apply the chain rule using the gradient vector to enable backpropagation.
