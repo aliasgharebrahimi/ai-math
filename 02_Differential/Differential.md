@@ -44,3 +44,16 @@ The gradient is a **vector** containing the partial derivatives of all the **var
 ### 🔢 Mathematical Definition
 
 First, we calculate the **partial derivatives** of the function with respect to all its variables, and then we arrange them **together as a vector.**
+which is denoted by $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n} \right)$
+
+## 🔍 Symbol Analysis
+In the expression $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n} \right)$:
+
+| Symbol                            | Meaning            |
+|:----------------------------------|:-------------------|
+| $\nabla f$                        | Gradient symbol    |
+| $\frac{\partial f}{\partial x_1}$ | Partial derivative |
+| $\frac{\partial f}{\partial x_2}$ | Partial derivative |
+| $, \dots,$ |   In other words, we can include any number of partial derivatives.                 |
+
+### 🧠 Application in Deep Learning
