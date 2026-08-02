@@ -38,3 +38,5 @@ Partial derivatives are the backbone of modern AI. They are fundamental to:
 # Gradient
 
 ### 💡 Conceptual Definition
+
+The gradient is a **vector** containing the partial derivatives of all the **variables of a given function.**
