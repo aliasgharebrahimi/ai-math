@@ -1,35 +1,4 @@
-# Mathematics in Artificial Intelligence: From Desk to Code
+# 🚀 ai-math
 
-<img src="./Project photos/main-README.md.jpg" alt="" />
+> Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
-## 📚 What we learn
-
-- Derivative, Optimization
-
-- Jacobian matrix, svd
-
-- Linear Algebra
-
-- Functions (in mathematics, of course)
-
-- Derivative and Gradient
-
-- Distributions
-
-## 🛠 Tools
-
-- Python
-- Pytorch
-
-## 🎯 Objective
-
-How Mathematics Has Taken Over All of Artificial Intelligence
-
-## Prerequisites
-- Python 3.8+
-- PyTorch
-- Matplotlib
-
-
-- Author : aliasghar ebrahimi
-- History : The year 2026
