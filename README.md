@@ -2,16 +2,12 @@
 
 > Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
----
-
 ## ✨ Key Features
 
 - **Mathematical Foundations:** Detailed conceptual definitions paired with step-by-step solved examples.
 - **PyTorch Implementation:** All mathematical concepts are implemented using the PyTorch framework for practical learning.
 - **Real-world Applications:** Explanations of how these topics apply to Deep Learning and Computer Vision.
 - **Ready-to-run Code:** Streamlined implementation for quick execution and testing.
-
----
 
 ## ⚙️ Prerequisites
 
@@ -46,8 +42,6 @@ cd ai-math
 pip install -r requirements.txt
 ```
 
----
-
 ## 🚀 Usage
 
 After completing the preparation steps, carry out these tasks:
@@ -63,7 +57,6 @@ BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 inv = BasicCodes.matrix_inversion()
 ```
 
-
 **Output code:**
 
 <pre>
@@ -71,7 +64,6 @@ inv = BasicCodes.matrix_inversion()
                                  [-0.2000,  0.4000]])
 </pre>
 
----
 
 ## 📁 Project Structure
 
@@ -81,8 +73,6 @@ inv = BasicCodes.matrix_inversion()
 - **Differential:** Concepts of derivatives and differentials and their codes
 - **README.md:** Project README.md
 - **LICENSE:** Project License Text
-
----
 
 ## 📄 License
 
