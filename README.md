@@ -2,12 +2,16 @@
 
 > Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
+---
+
 ## ✨ Key Features
 
 - **Mathematical Foundations:** Detailed conceptual definitions paired with step-by-step solved examples.
 - **PyTorch Implementation:** All mathematical concepts are implemented using the PyTorch framework for practical learning.
 - **Real-world Applications:** Explanations of how these topics apply to Deep Learning and Computer Vision.
 - **Ready-to-run Code:** Streamlined implementation for quick execution and testing.
+
+---
 
 ## ⚙️ Prerequisites
 
@@ -31,27 +35,25 @@ conda activate ai-math
 Follow these steps to get the project running on your local machine.
 
 ### 1. Clone the Repository
-First, clone thi repository to your local system:
+First, clone this repository to your local system:
 
 ```bash
 git clone https://github.com/alisgharebrahimi/ai-math.git
 cd ai-math
 
-# Create a new environment with Python 3.10
-conda create -n ai-math python=3.10 -y
-
-# Activate the environment
-conda activate ai-math
 
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+---
 
 ## 🚀 Usage
 
 After completing the preparation steps, carry out these tasks:
 
 Code has been written for each topic, structured using classes and methods. The main version of the code executes all the methods; however, you can choose not to run the main function that executes them all and instead run only the specific method you require.
+To execute the method, simply call and use the desired function from the class object.
 
 **Sample of the performance:**
 
@@ -68,6 +70,19 @@ inv = BasicCodes.matrix_inversion()
 [20] Matrix Inversion A: tensor([[ 0.6000, -0.7000],
                                  [-0.2000,  0.4000]])
 </pre>
+
+---
+
+## 📁 Project Structure
+
+<img src="./Project%20photos/Project%20Structure.jpg">
+
+- **Linear Algebra:** Linear algebra concepts and related code
+- **Differential:** Concepts of derivatives and differentials and their codes
+- **README.md:** Project README.md
+- **LICENSE:** Project License Text
+
+---
 
 ## 📄 License
 
