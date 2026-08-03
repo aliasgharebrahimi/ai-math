@@ -45,3 +45,26 @@ conda activate ai-math
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+## 🚀 Usage
+
+After completing the preparation steps, carry out these tasks:
+
+Code has been written for each topic, structured using classes and methods. The main version of the code executes all the methods; however, you can choose not to run the main function that executes them all and instead run only the specific method you require.
+
+**Sample of the performance:**
+
+<pre>
+BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
+
+inv = BasicCodes.matrix_inversion()
+</pre>
+
+**Output code:**
+
+<pre>
+[20] Matrix Inversion A: tensor([[ 0.6000, -0.7000],
+        [-0.2000,  0.4000]])
+</pre>
+
