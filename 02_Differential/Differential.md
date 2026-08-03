@@ -89,3 +89,16 @@ Without the chain rule, no backpropagation would have taken place.
 
 *   **Backpropagation:** Calculating the derivatives of all weights in each **layer** to perform the backpropagation algorithm.
 *   **Updating weights for all layers:** To update the weights of **all layers.**
+
+---
+
+# Backpropagation Algorithm
+
+### 💡 Conceptual Definition
+
+This algorithm encompasses all the preceding topics and is one of the most important ones; its steps are as follows:
+
+- 1 - The data enters the model, and the loss function is executed.
+- 2 - Then, backpropagation begins; first, it uses the chain rule for partial derivatives to calculate the loss function's derivative with respect to all model parameters.
+- 3 - It places all the partial derivatives into the gradient vector.
+- 4 - Our optimizer updates the parameters using gradients.
