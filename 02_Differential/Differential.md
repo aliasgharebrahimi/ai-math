@@ -82,3 +82,10 @@ $f(g(x, y)) = g(x, y)^2$
 To find the partial derivative of the function $f$ with respect to $x$, we must first determine the partial derivative of $g$ with respect to $x$ and the partial derivative of $f$ with respect to $g$, and then multiply the two derivatives together:
 
 $$ \frac{\partial f}{\partial x} = \frac{\partial f}{\partial g} \cdot \frac{\partial g}{\partial x} $$
+
+### 🧠 Application in Deep Learning
+
+Without the chain rule, no backpropagation would have taken place.
+
+*   **Backpropagation:** Calculating the derivatives of all weights in each **layer** to perform the backpropagation algorithm.
+*   **Updating weights for all layers:** To update the weights of **all layers.**
