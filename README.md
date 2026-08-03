@@ -2,12 +2,16 @@
 
 > Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
+<hr>
+
 ## ✨ Key Features
 
 - **Mathematical Foundations:** Detailed conceptual definitions paired with step-by-step solved examples.
 - **PyTorch Implementation:** All mathematical concepts are implemented using the PyTorch framework for practical learning.
 - **Real-world Applications:** Explanations of how these topics apply to Deep Learning and Computer Vision.
 - **Ready-to-run Code:** Streamlined implementation for quick execution and testing.
+
+<hr>
 
 ## ⚙️ Prerequisites
 
@@ -26,6 +30,8 @@ conda create -n ai-math python=3.9
 conda activate ai-math
 ```
 
+<hr>
+
 ## 🚀 Installation & Setup
 
 Follow these steps to get the project running on your local machine.
@@ -41,6 +47,8 @@ cd ai-math
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+<hr>
 
 ## 🚀 Usage
 
@@ -64,6 +72,7 @@ inv = BasicCodes.matrix_inversion()
                                  [-0.2000,  0.4000]])
 </pre>
 
+<hr>
 
 ## 📁 Project Structure
 
@@ -73,6 +82,8 @@ inv = BasicCodes.matrix_inversion()
 - **Differential:** Concepts of derivatives and differentials and their codes
 - **README.md:** Project README.md
 - **LICENSE:** Project License Text
+
+<hr>
 
 ## 📄 License
 
