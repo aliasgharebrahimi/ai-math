@@ -55,16 +55,17 @@ Code has been written for each topic, structured using classes and methods. The 
 
 **Sample of the performance:**
 
-<pre>
+```python
 BasicCodes = BasicCodes(device=device, dtype=torch.float32, requires_grad=False)
 
 inv = BasicCodes.matrix_inversion()
-</pre>
+```
+
 
 **Output code:**
 
 <pre>
 [20] Matrix Inversion A: tensor([[ 0.6000, -0.7000],
-        [-0.2000,  0.4000]])
+                                 [-0.2000,  0.4000]])
 </pre>
 
