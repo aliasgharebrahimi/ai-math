@@ -5,10 +5,12 @@ version = torch.__version__
 
 class Differential:
 
-    def partial_derivative(self, x, y):
+    def backpropagation(self, x, y):
 
         z = x**2 - y*2
-        z.backward()
+        a = z * 6
+
+        a.backward()
 
         return x.grad, y.grad
 
@@ -19,7 +21,7 @@ diff = Differential()
 
 def main():
 
-    p1, p2 = diff.partial_derivative(x, y)
+    p1, p2 = diff.backpropagation(x, y)
     print(f"Partial derivative x: {p1}, Partial derivative y: {p2}")
 
 if __name__ == ("__main__"):
