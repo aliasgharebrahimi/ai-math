@@ -2,6 +2,12 @@
 
 > Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7%2B-yellow)
+![License](https://img.shields.io/badge/License-Apache%202.0-green)
+
+
 <hr>
 
 ## ✨ Key Features
@@ -19,6 +25,7 @@
 - **Operating System:** Windows, macOS, or Linux
 - **Python Version:** `^3.9`
 - **torch Version:** `^2.0`
+- **Matplotlib Version:** `^3.7`
 
 ### Environment Setup (Recommended)
 
