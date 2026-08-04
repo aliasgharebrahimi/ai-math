@@ -7,7 +7,6 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7%2B-yellow)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green)
 
-
 <hr>
 
 ## ✨ Key Features
