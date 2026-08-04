@@ -107,3 +107,8 @@ This algorithm encompasses all the preceding topics and is one of the most impor
 
 The backpropagation process encompasses all the preceding concepts, and the algorithm's primary function is to calculate the partial derivatives of all model parameters in order to update them.
 
+### 🧠 Application in Deep Learning
+
+*   **Learning the model:** This algorithm is used to train the model's weights.
+*   **Weight update:** This algorithm is used to optimize the model by calculating the derivatives of all parameters.
+*   **Optimizer:** To perform its task, the optimizer requires derivatives, which are obtained via the backpropagation algorithm.
