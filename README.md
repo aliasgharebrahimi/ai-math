@@ -100,6 +100,11 @@ ai-math/
 
 <hr>
 
+## 🤝 Contributing
+Pull requests are welcome...
+
+<hr>
+
 ## 📄 License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
