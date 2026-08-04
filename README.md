@@ -1,5 +1,4 @@
 # 🚀 ai-math
-
 > Learning the mathematics required for deep learning, implementing it in code, and explaining the application of each concept within deep learning.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
@@ -10,7 +9,6 @@
 <hr>
 
 ## ✨ Key Features
-
 - **Mathematical Foundations:** Detailed conceptual definitions paired with step-by-step solved examples.
 - **PyTorch Implementation:** All mathematical concepts are implemented using the PyTorch framework for practical learning.
 - **Real-world Applications:** Explanations of how these topics apply to Deep Learning and Computer Vision.
@@ -19,7 +17,6 @@
 <hr>
 
 ## ⚙️ Prerequisites
-
 ### System Requirements
 - **Operating System:** Windows, macOS, or Linux
 - **Python Version:** `^3.9`
@@ -39,7 +36,6 @@ conda activate ai-math
 <hr>
 
 ## 🚀 Installation & Setup
-
 Follow these steps to get the project running on your local machine.
 
 ### 1. Clone the Repository
@@ -49,7 +45,6 @@ First, clone this repository to your local system:
 git clone https://github.com/alisgharebrahimi/ai-math.git
 cd ai-math
 
-
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -57,7 +52,6 @@ pip install -r requirements.txt
 <hr>
 
 ## 🚀 Usage
-
 After completing the preparation steps, carry out these tasks:
 
 Code has been written for each topic, structured using classes and methods. The main version of the code executes all the methods; however, you can choose not to run the main function that executes them all and instead run only the specific method you require.
@@ -81,8 +75,7 @@ inv = BasicCodes.matrix_inversion()
 <hr>
 
 ## 📁 Project Structure
-
-<img src="./Project%20photos/Project%20Structure.jpg">
+<img src="./Project%20photos/Project%20Structure.jpg" alt="Project Structure">
 
 ```
 ai-math/
@@ -112,5 +105,4 @@ Pull requests are welcome...
 <hr>
 
 ## 📄 License
-
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
