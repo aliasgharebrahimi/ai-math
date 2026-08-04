@@ -78,6 +78,21 @@ inv = BasicCodes.matrix_inversion()
 
 <img src="./Project%20photos/Project%20Structure.jpg">
 
+```
+ai-math/
+├── 01_Linear Algebra/
+│   ├── linear_algebra.py
+│   ├── linear_algebra.md
+│   └── README.md
+├── 02_Differential/
+│   ├── differential.py
+│   ├── differential.md
+│   └── README.md
+├── README.md
+├── LICENSE
+└── requirements.txt
+```
+
 - **Linear Algebra:** Linear algebra concepts and related code
 - **Differential:** Concepts of derivatives and differentials and their codes
 - **README.md:** Project README.md
