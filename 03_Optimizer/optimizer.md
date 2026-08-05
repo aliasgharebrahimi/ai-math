@@ -26,7 +26,6 @@ In our optimizer formula, we utilize the gradient; however, because the gradient
 <hr>
 
 ### SGD, GD
-
 SGD is also an optimizer, and its formula is as follows:
 
 $θ = θ - η * ∇θ J(θ)$
@@ -50,3 +49,15 @@ GD:
 ✅ More precisely
 
 ❌ Slower
+
+<hr>
+
+### Momentum
+Well, momentum was introduced to address the problem with SGD; it adds a fraction of the previous gradient—scaled by a coefficient—to the new gradient.
+
+First, the momentum term multiplies the previous derivative value by the coefficient $\gamma v_{t-1}$, and then adds the resulting value to the current derivative.
+
+Why do we use momentum? 
+
+* **✅ Speed increase:** As the magnitude of the derivative increases, the change in parameters becomes greater, resulting in a higher learning rate.
+* **✅ Resolving the parameter-stuck issue:** In some instances, the derivative might be, say, 10, and then shift to -10; in such cases, the model's weights remain virtually unchanged.
