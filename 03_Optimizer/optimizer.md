@@ -53,11 +53,11 @@ GD:
 <hr>
 
 ### Momentum
-Well, momentum was introduced to address the problem with SGD; it adds a fraction of the previous gradient—scaled by a coefficient—to the new gradient.
+Well, momentum was introduced to address the problem with SGD; it adds a fraction of the previous update (velocity), scaled by a coefficient, to the current gradient.
 
-First, the momentum term multiplies the previous derivative value by the coefficient $\gamma v_{t-1}$, and then adds the resulting value to the current derivative.
+Momentum utilizes the term $/gammo$ to incorporate a summary of previous gradients. Essentially, it uses this condensed representation of previous gradients and combines it with the current gradient.
 
 Why do we use momentum? 
 
-* **✅ Speed increase:** As the magnitude of the derivative increases, the change in parameters becomes greater, resulting in a higher learning rate.
-* **✅ Resolving the parameter-stuck issue:** In some instances, the derivative might be, say, 10, and then shift to -10; in such cases, the model's weights remain virtually unchanged.
+* **✅ Increased speed:** ✅ Momentum accumulates gradients in consistent directions, leading to larger parameter updates and faster convergence.
+* **✅ Resolving the parameter-stuck issue:** In some instances, The gradient might be 10, for example, and then change to -10.; in such cases, the model's weights remain virtually unchanged.
