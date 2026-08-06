@@ -61,3 +61,20 @@ Why do we use momentum?
 
 * **✅ Increased speed:** ✅ Momentum accumulates gradients in consistent directions, leading to larger parameter updates and faster convergence.
 * **✅ Resolving the parameter-stuck issue:** In some instances, The gradient might be 10, for example, and then change to -10.; in such cases, the model's weights remain virtually unchanged.
+
+<hr>
+
+# RMSProp
+An optimizer designed to address the issue of a uniform learning rate for all weights—it does so by utilizing the squares of past gradients and the square of the current gradient.
+
+**Formula:**
+
+$v(t) = β·v(t-1) + (1-β)·(∇L)²$
+
+**Explanation of the formula:**
+
+| Symbol | Explanation |
+| :--- | :--- |
+| $v(t)$ | It is the amount of parameter change derived from the squares of previous gradients and the square of the instantaneous gradient. |
+| β·v(t-1) | This refers to the extent to which previous gradients are utilized—specifically, by multiplying them by a coefficient (this is known as momentum). |
+| $(1-β)·(∇L)²$ | Here, it determines the remaining coefficient, multiplies it by the squared gradient to obtain the instantaneous gradient value, and adds this to the previous gradient. |
