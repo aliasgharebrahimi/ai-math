@@ -87,10 +87,10 @@ ai-math/
 │   ├── differential.py
 │   └── differential.md
 │   
-├── 03_Optimizer/
-│   ├── optimizer.py
-│   └── optimizer.md
-│        
+│    03_Optimizer/
+│    ├── optimizer.py
+│    └── optimizer.md
+│
 ├── README.md
 ├── LICENSE
 └── requirements.txt
