@@ -60,5 +60,3 @@ All samples
 
 <hr>
 
-# Adam
-Well, here we are at the world's most famous and widely used optimizer. Why? Because it maintains direction *and* applies a different learning rate for each parameter—essentially combining Momentum and RMSProp.
