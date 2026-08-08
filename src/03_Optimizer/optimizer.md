@@ -1,6 +1,8 @@
 # optimizer
 > In machine learning, there is an algorithm that reduces the error (loss) by adjusting the model's parameters.
 
+<hr>
+
 # family of optimizers
 ```
 GD(the progenitor)
@@ -12,6 +14,8 @@ GD(the progenitor)
 └── Adam (the most popular)
     └── AdamW
 ```
+
+<hr>
 
 # GD
 This is one of the earliest and simplest optimizers; other optimizers, such as SGD, were built upon its algorithm.
@@ -32,6 +36,8 @@ $θ ← θ - η ∇J(θ)$
 
 This mini-batch optimizer encompasses the entire set of samples.
 
+<hr>
+
 # SGD
 
 It bears a strong resemblance to GD, with the difference that SGD uses a single sample to update the parameters.
@@ -49,6 +55,8 @@ The same GD
 The main difference lies precisely here: SGD uses only a single sample.
 
 **Important note:** In deep learning, the "mini-batch" is equivalent to the number of samples in the batch; this means, for instance, that SGD no longer operates on a single sample but instead processes the entire batch of samples.
+
+<hr>
 
 # Momentum
 Momentum was introduced to address a limitation of the Gradient Descent (GD) optimizer. The core idea is to align the current update with previous ones by accumulating a summary of past updates, thereby preventing oscillation.
