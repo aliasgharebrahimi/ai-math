@@ -87,6 +87,8 @@ $\theta_{t+1} = \theta_t - \eta v_t$: The weight update formula is the same as t
 * **Optimizing routes**
 * **Usually speeding up updates**
 
+<hr>
+
 # RMSProp
 The core idea is very clever: first, the update magnitude for parameters and gradients is calculated individually for each parameter; second, by incorporating the squares of past gradients, the update step is controlled and optimized.
 An interesting point is that the learning rate varies for each parameter!
@@ -115,3 +117,8 @@ $\frac{\eta}{\sqrt{s_t}+\epsilon}$: This is the crux of the matter: a variable l
 **Mini-batch optimizer:**
 
 All samples
+
+<hr>
+
+# Adam
+Well, here we are at the world's most famous and widely used optimizer. Why? Because it maintains direction *and* applies a different learning rate for each parameter—essentially combining Momentum and RMSProp.
