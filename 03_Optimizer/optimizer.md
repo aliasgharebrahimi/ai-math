@@ -31,3 +31,19 @@ $θ ← θ - η ∇J(θ)$
 **How does it work in mini-batch gradient descent?**
 
 This mini-batch optimizer encompasses the entire set of samples.
+
+# SGD
+
+It bears a strong resemblance to GD, with the difference that SGD uses a single sample to update the parameters.
+
+**Formula:**
+
+The same GD formula
+
+**Explanation of the formula:**
+
+The same GD
+
+**How does it work in mini-batch gradient descent?**
+
+The main difference lies precisely here: SGD uses only a single sample.
